@@ -51,3 +51,4 @@ YourNewTV will never ask for contacts, camera, microphone, SMS, phone state, or 
 ## 5. Security & Verification
 
 Because YourNewTV is 100% open source under the MIT License, anyone can inspect, audit, and build the APK directly from source. You can monitor device network traffic via ADB (`adb shell tcpdump` or Wireshark) to verify zero outbound telemetry.
+

@@ -1,18 +1,93 @@
-# Build outputs and temporary caches
-build/
+# ==============================================================================
+# YourNewTV - Git Ignore Configuration
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# Android & Gradle Build Artifacts
+# ------------------------------------------------------------------------------
 .gradle/
-*.log
-*.tmp
-*.pyc
-__pycache__/
+*/.gradle/
+build/
+*/build/
+bin/
+gen/
+out/
+.cxx/
+local.properties
+captures/
+.externalNativeBuild/
+output-metadata.json
+*.hprof
+*.dump
 
-# Local IDE and OS metadata
-.DS_Store
-Thumbs.db
-.idea/
-.vscode/
+# Compiled binary packages
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
 
-# Keep pre-built release APK
+# Explicitly preserve the official signed release APK
 !apk/YourNewTV-v1.0-release.apk
 
+# Keystores and signing certificates
+*.keystore
+*.jks
+signing.properties
 
+# ------------------------------------------------------------------------------
+# Node.js & Web Assets
+# ------------------------------------------------------------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.npm
+dist/
+.env
+.env.local
+.env.*.local
+
+# ------------------------------------------------------------------------------
+# Python & Automation Tools
+# ------------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+.pytest_cache/
+.coverage
+htmlcov/
+*.log
+*.tmp
+*.bak
+
+# ------------------------------------------------------------------------------
+# IDEs & Developer Tooling
+# ------------------------------------------------------------------------------
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+.project
+.classpath
+.settings/
+*.sublime-project
+*.sublime-workspace
+.playwright-mcp/
+test-results/
+
+# ------------------------------------------------------------------------------
+# Operating System Caches
+# ------------------------------------------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/

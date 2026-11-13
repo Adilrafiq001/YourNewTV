@@ -18,3 +18,4 @@
 ## Type Designers
 - **Rasmus Andersson** - Inter typeface family
 - **Vernon Adams** - Antonio typeface
+

@@ -62,3 +62,4 @@ Synthetic scene layers (`scene-night.jpg`, `scene-golden.jpg`, `scene-fog.jpg`, 
 
 - **Founder & Maintainer:** Adil Rafiq ([@Adilrafiq001](https://github.com/Adilrafiq001))
 - **Open-Source Contributors:** The global Android TV community and independent TV hackers.
+

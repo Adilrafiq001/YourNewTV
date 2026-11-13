@@ -32,3 +32,4 @@ If you identify a security vulnerability, please disclose it responsibly:
 - **Acknowledgment:** We will acknowledge receipt of your vulnerability report within 48 hours.
 - **Assessment & Fix:** We will evaluate the report, develop a targeted patch, and test it across physical TV testbeds.
 - **Coordinated Release:** Once verified, a patch release and advisory credit will be published.
+
