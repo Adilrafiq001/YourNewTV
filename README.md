@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="assets/logo.svg" width="160" height="160" alt="YourNewTV Logo" />
+
 # YourNewTV
 
 ### Ad-free, 60 FPS frosted-glass ambient launcher for Android TV and Google TV.

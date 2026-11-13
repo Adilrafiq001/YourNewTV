@@ -13,5 +13,6 @@ Thumbs.db
 .vscode/
 
 # Keep pre-built release APK
-!apk/AuraTV-v1.0-release.apk
+!apk/YourNewTV-v1.0-release.apk
+
 

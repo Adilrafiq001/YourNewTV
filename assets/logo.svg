@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Background Ambient Glow -->
+    <radialGradient id="ambientGlow" cx="50%" cy="45%" r="50%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.35"/>
+      <stop offset="50%" stop-color="#6366F1" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Frosted Glass Surface Gradient -->
+    <linearGradient id="glassSurface" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.22"/>
+      <stop offset="40%" stop-color="#FFFFFF" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0.12"/>
+    </linearGradient>
+
+    <!-- Glass Specular Border -->
+    <linearGradient id="glassBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.75"/>
+      <stop offset="30%" stop-color="#FFFFFF" stop-opacity="0.3"/>
+      <stop offset="70%" stop-color="#818CF8" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0.6"/>
+    </linearGradient>
+
+    <!-- Inner Screen Bevel -->
+    <linearGradient id="innerBevel" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.15"/>
+    </linearGradient>
+
+    <!-- Vibrant Brand Glyph Gradient (Y Horizon) -->
+    <linearGradient id="brandYGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="45%" stop-color="#818CF8"/>
+      <stop offset="100%" stop-color="#C084FC"/>
+    </linearGradient>
+
+    <!-- Accent Sheen -->
+    <linearGradient id="sheen" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Drop Shadows -->
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="16" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="shadowUnder" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feOffset dx="0" dy="16" result="offset"/>
+      <feComposite in="SourceGraphic" in2="offset" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Ambient Glow Behind TV -->
+  <ellipse cx="256" cy="235" rx="200" ry="140" fill="url(#ambientGlow)"/>
+
+  <!-- Floating Floor Reflection / Shadow -->
+  <ellipse cx="256" cy="415" rx="140" ry="18" fill="#000000" opacity="0.35" filter="url(#softGlow)"/>
+  <ellipse cx="256" cy="415" rx="80" ry="8" fill="#38BDF8" opacity="0.25" filter="url(#softGlow)"/>
+
+  <!-- Main TV Display Glass Chassis -->
+  <g filter="url(#shadowUnder)">
+    <!-- Glass Panel Body -->
+    <rect x="76" y="105" width="360" height="250" rx="44" fill="url(#glassSurface)" stroke="url(#glassBorder)" stroke-width="3"/>
+    <!-- Subtle Inner Border Highlight -->
+    <rect x="80" y="109" width="352" height="242" rx="40" fill="none" stroke="url(#innerBevel)" stroke-width="1.5"/>
+
+    <!-- Diagonal Glass Glare Sweep -->
+    <path d="M 78,145 Q 160,107 240,107 L 330,107 Q 150,230 80,290 Z" fill="url(#sheen)" opacity="0.25"/>
+
+    <!-- Central "Y" Brand Glyph (Representing Your / New / Horizon) -->
+    <!-- Left Wing -->
+    <path d="M 172 172 C 172 165, 180 160, 187 164 L 256 218 L 256 244 L 180 184 C 175 180, 172 176, 172 172 Z" 
+          fill="url(#brandYGrad)" filter="url(#softGlow)"/>
+    
+    <!-- Right Wing -->
+    <path d="M 340 172 C 340 165, 332 160, 325 164 L 256 218 L 256 244 L 332 184 C 337 180, 340 176, 340 172 Z" 
+          fill="url(#brandYGrad)" filter="url(#softGlow)"/>
+
+    <!-- Center Geometric Core (Prism Point) -->
+    <path d="M 188 174 L 256 226 L 324 174 C 332 168 344 174 344 184 L 344 188 C 344 194 340 200 334 204 L 272 250 L 272 300 C 272 309 265 316 256 316 C 247 316 240 309 240 300 L 240 250 L 178 204 C 172 200 168 194 168 188 L 168 184 C 168 174 180 168 188 174 Z" 
+          fill="url(#brandYGrad)"/>
+
+    <!-- Crisp White Specular Top-Light on the Glyph -->
+    <path d="M 188 174 L 256 226 L 324 174" 
+          fill="none" stroke="#FFFFFF" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.95"/>
+
+    <!-- Center Play/Depth Dot Accent -->
+    <circle cx="256" cy="226" r="6" fill="#FFFFFF" filter="url(#softGlow)"/>
+  </g>
+
+  <!-- Modern Floating Stand Base -->
+  <path d="M 226 357 L 234 385 C 235 388 238 390 242 390 L 270 390 C 274 390 277 388 278 385 L 286 357 Z" 
+        fill="url(#glassSurface)" stroke="url(#glassBorder)" stroke-width="2"/>
+  <rect x="210" y="388" width="92" height="6" rx="3" fill="url(#glassBorder)"/>
+</svg>
