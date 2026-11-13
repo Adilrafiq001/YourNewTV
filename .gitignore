@@ -1,0 +1,16 @@
+# Build outputs and temporary caches
+build/
+.gradle/
+*.log
+*.tmp
+*.pyc
+__pycache__/
+
+# Local IDE and OS metadata
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Keep pre-built release APK
+!apk/AuraTV-v1.0-release.apk
