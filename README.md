@@ -44,41 +44,48 @@ Here is exactly what is inside each of the 3 top-right icons:
 ---
 
 ### 1. ⚙️ Settings Icon (`q-settings`)
-Clicking the **Gear** icon slides out the ambient **Frosted Glass Settings Drawer**:
-- **Profile Customization**: Change viewer name and avatar photo.
-- **Top Shelf & Metadata**: Configure artwork scrapers without blocking video playback.
-- **Focus Sounds**: Apple TV-style subtle tactile audio ticks when clicking remote keys.
-- **Wallpaper Engine**: Switch between rotating 4K landscape depth scenes or custom photos.
-- **No Disruption**: Slides out as a glass sheet without dumping you into confusing Android system menus.
+Clicking the **Gear** icon in the top-right corner opens the **Frosted Glass Home Settings Drawer**:
+- **Sidebar Categories**: Instant navigation across Look & Themes, App Drawer, Wallpapers, Remote Control, Sound, and Profiles.
+- **Theme & Appearance**: Switch between clean daylight glass and dark ambient night looks.
+- **Focus Sounds**: Apple TV-style subtle tactile audio ticks when navigating with the remote.
+- **Rotating Landscape Wallpapers**: Select 4K dynamic landscapes with clock depth layers.
+- **Zero Disruption**: Opens as a smooth frosted overlay directly over your screen without dumping you into slow Android system menus.
 
 <div align="center">
-  <img src="docs/screenshots/after_aura_tv_settings.png" width="700" alt="Settings Drawer" />
+  <img src="docs/screenshots/menu1_settings_open.png" width="800" alt="Settings Drawer Open" />
 </div>
 
 ---
 
 ### 2. 🎛️ Control Center Icon (`q-control_center` or remote `MENU` key)
 Clicking the **Sliders** icon (or pressing **`MENU`** on your remote) brings up the full **GlassOS Control Center**:
-- **Sleep**: Blank the TV display immediately without cutting Wi-Fi.
-- **Wi-Fi**: Real-time signal strength badge and quick network switch.
-- **Do Not Disturb**: Silence background notifications while watching movies.
-- **Audio Output**: Fast audio routing and volume mute.
-- **Sleep Timer**: Cycle countdown (15 min, 30 min, 1 hr, 2 hr).
-- **Controllers**: 1-click Bluetooth pairing for gamepads and headphones.
-- **Accessibility**: High-contrast text and visual aids.
-- **Parental Controls**: One-tap toggle to kid-safe profiles.
-- **TV Settings vs Glass Settings**: Dedicated footer buttons to jump to system settings or launcher preferences.
+- **Active Profile Badge**: Shows current viewer profile ("Family") and active Wi-Fi status.
+- **8 Frosted Quick Toggles** with 2D D-pad grid navigation:
+  - **Sleep**: Blank the TV display immediately without disconnecting Wi-Fi.
+  - **Wi-Fi**: Real-time signal strength indicator and quick network picker.
+  - **Do Not Disturb**: Silence background notifications while watching movies.
+  - **Audio Output**: Fast audio routing and instant mute.
+  - **Sleep Timer**: Cycle timer countdown (15 min, 30 min, 45 min, 1 hr, 2 hr).
+  - **Controllers**: 1-click Bluetooth pairing for remotes and gamepads.
+  - **Accessibility**: High-contrast text and visual aids.
+  - **Parental Controls**: One-tap toggle into kid-safe mode.
+- **Dedicated Footers**: Jump directly to TV System Settings or Glass Settings.
 
 <div align="center">
-  <img src="docs/screenshots/after_aura_tv_control_center.png" width="700" alt="Control Center Modal" />
+  <img src="docs/screenshots/menu2_control_center_open.png" width="800" alt="Control Center Modal Open" />
 </div>
 
 ---
 
 ### 3. 🌙 Sleep Timer Icon (`q-sleep`)
-Clicking the **Moon** icon manages your TV's power and idle standby:
-- **Quick Sleep Timer**: Set a timer before bed directly from the home screen.
-- **Anti-Standby Fix**: Solves the common Xiaomi / Android TV bug where the TV goes into a deep coma after 15 minutes and loses Wi-Fi connection.
+Clicking the **Moon** icon in the top-right corner opens the **Interactive Sleep Timer Popup**:
+- **Quick-Cycle Timers**: Choose 15m, 30m, 45m, 1 hour, or 2 hours with a single D-pad click.
+- **Anti-Standby Fix**: Powers down the display panel while keeping the internal Wi-Fi chip awake, permanently fixing the Xiaomi / Android TV deep sleep Wi-Fi bug.
+- **Instant Display Off**: Dim screen to zero wattage without cutting streaming audio or downloads.
+
+<div align="center">
+  <img src="docs/screenshots/menu3_sleep_menu_open.png" width="800" alt="Sleep Timer Popup Open" />
+</div>
 
 ---
 
@@ -115,6 +122,17 @@ Every screenshot was taken directly from a real 4K Android TV over ADB:
 
 <div align="center">
   <img src="docs/screenshots/comparison_home_settings.png" width="920" alt="Home Settings Transformation" />
+</div>
+
+---
+
+### 4. Sleep & Power Menu: Deep Submenus vs. 1-Click Popup
+| ❌ Before: Stock Android TV Power Settings | ✨ After: yourNewTV Sleep Timer Popup |
+|:---:|:---:|
+| Requires digging through 5 nested submenus in system preferences to find sleep timers. | 1-click interactive popup directly from the top-right moon icon with Wi-Fi stay-alive protection. |
+
+<div align="center">
+  <img src="docs/screenshots/comparison_sleep_menu.png" width="920" alt="Sleep Menu Transformation" />
 </div>
 
 ---
