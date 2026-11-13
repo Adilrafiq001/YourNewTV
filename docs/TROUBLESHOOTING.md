@@ -1,10 +1,10 @@
-# TranscendTV Troubleshooting & FAQ Guide
+# yourNewTV Troubleshooting & FAQ Guide
 
 ---
 
 ## 1. Remote Control Mappings
 
-| Remote Key | TranscendTV Action |
+| Remote Key | yourNewTV Action |
 |:---|:---|
 | **D-Pad Left / Right** | Cycle horizontally through elevated dock apps |
 | **D-Pad Up** | Move focus to Top-Right Quick Access Cluster (Settings, Control Center, Sleep) |
@@ -12,7 +12,7 @@
 | **Center / OK** | Launch highlighted application or activate toggle |
 | **MENU** | Open / Close GlassOS Control Center modal |
 | **BACK** | Dismiss Control Center or Settings drawer back to Home Screen |
-| **HOME** | Instant return to TranscendTV Home Screen |
+| **HOME** | Instant return to yourNewTV Home Screen |
 
 ---
 
@@ -35,13 +35,13 @@ adb shell settings put global sleep_timeout 0
 adb shell settings put system screen_off_timeout 2147483647
 adb shell settings put secure sleep_timeout -1
 ```
-*Note: TranscendTV's `HomeActivity.kt` also includes `FLAG_KEEP_SCREEN_ON` to prevent runtime sleeps.*
+*Note: yourNewTV's `HomeActivity.kt` also includes `FLAG_KEEP_SCREEN_ON` to prevent runtime sleeps.*
 
 ---
 
 ## 3. Disabling & Re-enabling Stock Android TV Launcher
 
-### To Make TranscendTV the Exclusive Default Launcher
+### To Make yourNewTV the Exclusive Default Launcher
 Disable the stock Google TV / Android TV launcher:
 ```bash
 adb shell pm disable-user --user 0 com.google.android.tvlauncher

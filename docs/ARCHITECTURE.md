@@ -1,6 +1,6 @@
-# TranscendTV Architecture & Design Engineering
+# yourNewTV Architecture & Design Engineering
 
-TranscendTV is an ambient, zero-ad, high-performance home launcher designed for Android TV and Google TV devices. It combines the local-first, low-overhead foundation of Couch TV with the aesthetic, frosted-glass design language inspired by GlassOS and Apple TV.
+yourNewTV is an ambient, zero-ad, high-performance home launcher designed for Android TV and Google TV devices. It combines the local-first, low-overhead foundation of Couch TV with the aesthetic, frosted-glass design language inspired by GlassOS and Apple TV.
 
 ---
 
@@ -13,7 +13,7 @@ TranscendTV is an ambient, zero-ad, high-performance home launcher designed for 
                       +-------------------+-------------------+
                                           |
                       +-------------------v-------------------+
-                      |      TranscendTV Android Native Wrapper    |
+                      |      yourNewTV Android Native Wrapper    |
                       |   - dev.couchtv.ontv / HomeActivity   |
                       |   - FLAG_KEEP_SCREEN_ON Window Policy |
                       |   - Hardware Accelerated WebView      |

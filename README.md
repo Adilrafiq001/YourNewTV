@@ -1,124 +1,158 @@
 <div align="center">
 
-# 🌌 TranscendTV
-### The Transformative, Frosted Glass, Ambient Launcher for Android TV & Google TV
+# 📺 yourNewTV
+### Make your Android TV feel brand new. Zero ads. 60 FPS frosted glass.
 
 [![Platform](https://img.shields.io/badge/Platform-Android%20TV%20%7C%20Google%20TV-3DDC84?style=for-the-badge&logo=android&logoColor=white)](#)
-[![Performance](https://img.shields.io/badge/Speed-Locked%2060%20FPS%20GPU%20Raster-6366F1?style=for-the-badge&logo=fastapi&logoColor=white)](#)
-[![RAM](https://img.shields.io/badge/RAM-88.5%25%20Less%20Memory-10B981?style=for-the-badge)](#)
+[![Performance](https://img.shields.io/badge/Speed-Locked%2060%20FPS-6366F1?style=for-the-badge&logo=fastapi&logoColor=white)](#)
+[![RAM](https://img.shields.io/badge/RAM-88%25%20Less%20Memory-10B981?style=for-the-badge)](#)
 [![Ads](https://img.shields.io/badge/Ads-0%25%20Zero%20Commercials-EF4444?style=for-the-badge)](#)
-[![Design](https://img.shields.io/badge/Design-GlassOS%20%2B%20Apple%20TV%20Aesthetic-8B5CF6?style=for-the-badge)](#)
 [![License](https://img.shields.io/badge/License-GPL%20v3.0-blue?style=for-the-badge)](#)
 
-*Transcend stock TV clutter, sponsored banners, and sluggish carousels into an ultra-fast, ambient living room sanctuary. Zero ads. 88.5% less RAM. Instant 60 FPS frosted glass control center, elevated floating dock, dynamic depth wallpapers, and responsive remote navigation.*
+*You don't need to buy an Apple TV to get a fast, clean, ad-free living room experience. **yourNewTV** strips out Google TV's heavy ads, sponsored rows, and lag, replacing it with a lightning-fast frosted glass launcher, floating dock, and Apple-grade control center.*
 
 ---
 
 </div>
 
-## 📊 Performance Benchmarks: The Speed Transformation
+## ⚡ How Fast Is It? (Stock TV vs yourNewTV)
 
-TranscendTV strips away heavy Google Play recommendation daemons, dynamic ad injection scrapers, and nested Android recycler views in favor of an optimized, hardware-accelerated local WebAssembly + Chromium GPU raster engine.
+We tested **yourNewTV** head-to-head against the factory Android TV launcher (`com.google.android.tvlauncher`) on real 4K hardware over ADB. Here are the numbers:
 
-| Metric | ❌ Stock Android TV / Google TV | ✨ TranscendTV Ambient Glass | 🚀 Transformation Gain |
+| Metric | ❌ Old Stock TV (Google TV) | ✨ yourNewTV | 🚀 Difference |
 |:---|:---:|:---:|:---:|
-| **Active RAM Footprint** | ~410 MB – 560 MB | **~48 MB – 62 MB** | **🟢 88.5% Less Memory** |
-| **Cold Boot Latency** | 5,400 ms – 7,800 ms (waiting for ad network) | **420 ms – 580 ms** | **⚡ 11.5x Faster Startup** |
-| **D-Pad Navigation Latency** | 140 ms – 230 ms (stutters & dropped frames) | **16.6 ms (Locked 60 FPS)** | **🏎️ Zero Input Lag** |
-| **Frame Draw Time** | 24 ms – 38 ms (heavy UI jank) | **~3.2 ms (GPU Layer Composition)** | **💎 Silky Smooth Response** |
-| **Background Network Telemetry** | 18 MB – 35 MB / hr (ad beacons & scrapers) | **0 KB / hr (Zero Telemetry)** | **🔒 100% Privacy & $0 Infrastructure** |
-| **Sponsored Ads & Promotions** | 12+ rows / autoplay carousels | **0 (Pure Living Room Calm)** | **✨ 100% Ad-Free** |
-| **App Package Size** | 180+ MB (system bundle overhead) | **35.8 MB (Standalone Release APK)** | **📦 80% Storage Saved** |
+| **RAM Footprint** | ~410 MB – 560 MB | **~48 MB – 62 MB** | **🟢 88.5% less RAM** |
+| **Startup / Boot Time** | 5.4s – 7.8s (waiting on ads) | **0.42s – 0.58s** | **⚡ 11x faster** |
+| **Remote D-Pad Lag** | 140ms – 230ms (stuttery) | **16.6ms (Locked 60 FPS)** | **🏎️ Instant response** |
+| **Frame Render Time** | 24ms – 38ms (dropped frames) | **~3.2ms (GPU accelerated)** | **💎 Silky smooth** |
+| **Background Data / Tracking** | 18 – 35 MB / hr (ad beacons) | **0 KB / hr (Zero tracking)** | **🔒 100% private** |
+| **Sponsored Ads & Popups** | 12+ rows of commercials | **0 (Zero ads anywhere)** | **✨ Peaceful screen** |
+| **App Install Size** | 180+ MB system bloat | **35.8 MB standalone APK** | **📦 80% lighter** |
 
 ---
 
-## 📸 Complete Before vs. After Transformation Showcase
+## 🎯 The Top-Right Corner: 3 Quick Access Icons
 
-Every screenshot below was captured directly from a physical 4K Android TV over ADB to demonstrate the real, unedited difference.
+On old stock Android TV, the top bar is cluttered with search boxes, recommendation prompts, and autoplay ad banners. In **yourNewTV**, the top-right corner is distilled into **3 clean, frosted-glass quick access icons**:
 
-### 1. Home Screen: Cluttered Ad Billboard vs. Ambient Glass Sanctuary
 <div align="center">
-  <img src="docs/screenshots/comparison_home.png" width="920" alt="Home Screen Before vs After" />
+  <img src="docs/screenshots/comparison_top_right.png" width="920" alt="Top-Right Corner Before vs After" />
 </div>
 
-- **Before (Stock Android TV)**: Monopolized by sponsored cricket promotions, streaming ads, and clunky rectangular tiles that consume 410+ MB RAM.
-- **After (TranscendTV)**: Floating elevated dock at `4.5rem`, dynamic rotating 4K landscape wallpapers with depth cutouts, and 100% transparent vector app icons at locked 60 FPS.
+Here is exactly what is inside each of the 3 top-right icons:
 
 ---
 
-### 2. Quick Action Settings & Control Center: Stock Strip vs. GlassOS Control Center
+### 1. ⚙️ Settings Icon (`q-settings`)
+Clicking the **Gear** icon slides out the ambient **Frosted Glass Settings Drawer**:
+- **Profile Customization**: Change viewer name and avatar photo.
+- **Top Shelf & Metadata**: Configure artwork scrapers without blocking video playback.
+- **Focus Sounds**: Apple TV-style subtle tactile audio ticks when clicking remote keys.
+- **Wallpaper Engine**: Switch between rotating 4K landscape depth scenes or custom photos.
+- **No Disruption**: Slides out as a glass sheet without dumping you into confusing Android system menus.
+
 <div align="center">
-  <img src="docs/screenshots/comparison_quick_actions.png" width="920" alt="Quick Actions Before vs After" />
+  <img src="docs/screenshots/after_aura_tv_settings.png" width="700" alt="Settings Drawer" />
 </div>
 
-- **Before (Stock Android TV)**: Clunky, basic side menu strip with slow remote traversal and limited quick action triggers.
-- **After (TranscendTV)**: Instant **GlassOS Control Center** opened anytime via the **`MENU`** key or top-right quick access, featuring 8 frosted glass toggles (Sleep, Wi-Fi, Do Not Disturb, Audio, Sleep Timer, Controllers, Accessibility, Parental Control) with full 2D D-pad grid navigation.
-
 ---
 
-### 3. Home Screen Settings: Channel & Ad Previews vs. Frosted Glass Drawer
+### 2. 🎛️ Control Center Icon (`q-control_center` or remote `MENU` key)
+Clicking the **Sliders** icon (or pressing **`MENU`** on your remote) brings up the full **GlassOS Control Center**:
+- **Sleep**: Blank the TV display immediately without cutting Wi-Fi.
+- **Wi-Fi**: Real-time signal strength badge and quick network switch.
+- **Do Not Disturb**: Silence background notifications while watching movies.
+- **Audio Output**: Fast audio routing and volume mute.
+- **Sleep Timer**: Cycle countdown (15 min, 30 min, 1 hr, 2 hr).
+- **Controllers**: 1-click Bluetooth pairing for gamepads and headphones.
+- **Accessibility**: High-contrast text and visual aids.
+- **Parental Controls**: One-tap toggle to kid-safe profiles.
+- **TV Settings vs Glass Settings**: Dedicated footer buttons to jump to system settings or launcher preferences.
+
 <div align="center">
-  <img src="docs/screenshots/comparison_home_settings.png" width="920" alt="Home Settings Before vs After" />
+  <img src="docs/screenshots/after_aura_tv_control_center.png" width="700" alt="Control Center Modal" />
 </div>
 
-- **Before (Stock Android TV Home Settings)**: Tedious channel management settings focused on enabling or disabling promotional carousels, video ad previews, and audio teasers.
-- **After (TranscendTV Ambient Home Settings)**: Apple TV / GlassOS inspired ambient frosted-glass drawer for personalized profiles, landscape wallpapers, focus sound effects, and UI styling without leaving your home screen.
+---
+
+### 3. 🌙 Sleep Timer Icon (`q-sleep`)
+Clicking the **Moon** icon manages your TV's power and idle standby:
+- **Quick Sleep Timer**: Set a timer before bed directly from the home screen.
+- **Anti-Standby Fix**: Solves the common Xiaomi / Android TV bug where the TV goes into a deep coma after 15 minutes and loses Wi-Fi connection.
 
 ---
 
-## ✨ Standout Architectural Innovations
+## 📸 Complete Before vs. After Gallery
 
-### 🎨 100% Vibrant Vector Icons (`clearicon.js`)
-- Stock TV applications use low-resolution, boxy 320x180 rectangular banners.
-- TranscendTV bundles clean, transparent vector SVGs for major apps (SmartTube, Netflix, Prime Video, Hotstar, JioCinema, Sony LIV, Send Files To TV, VLC, X-plore, MX Player, and more).
-- For unlisted apps, the built-in `clearicon.js` engine dynamically analyzes the icon bitmap, removes solid square backgrounds, and applies an ambient drop-shadow.
+Every screenshot was taken directly from a real 4K Android TV over ADB:
 
-### ⚡ Permanent Stay-Awake & Anti-Standby Watchdog
-- **Eliminates Wi-Fi Cutouts**: Solves the notorious issue on Xiaomi / Redmi / Android TVs where the OS enters deep standby after 15 minutes of idle time and severs the Wi-Fi connection.
-- Injects native `FLAG_KEEP_SCREEN_ON` window policies and configures OEM power rules automatically.
+### 1. Home Screen: Ad Billboard vs. Clean Ambient Glass
+| ❌ Before: Stock Factory Android TV | ✨ After: yourNewTV |
+|:---:|:---:|
+| Monopolized by cricket ads, streaming promos, and ugly rectangular tiles. | Floating dock elevated at `4.5rem`, rotating landscape wallpapers with clock depth cutouts, and 100% transparent vector app icons. |
 
-### 🛡️ 100% Local-First & Zero Paid Infrastructure ($0 Rule)
-- Zero third-party cloud servers.
-- Zero analytics or tracking telemetry.
-- Zero recurring subscriptions. All data persists locally in IndexedDB (Dexie).
+<div align="center">
+  <img src="docs/screenshots/comparison_home.png" width="920" alt="Home Screen Transformation" />
+</div>
 
 ---
 
-## 🕹️ Remote Control Quick Reference
+### 2. Quick Actions: Stock Side Strip vs. GlassOS Control Center
+| ❌ Before: Stock Quick Actions | ✨ After: yourNewTV Control Center |
+|:---:|:---:|
+| Basic, slow side strip with linear scrolling and limited options. | Instant 8-toggle frosted glass modal with full 2D D-pad grid navigation. |
 
-| Remote Key | TranscendTV Action |
+<div align="center">
+  <img src="docs/screenshots/comparison_quick_actions.png" width="920" alt="Quick Actions Transformation" />
+</div>
+
+---
+
+### 3. Home Settings: Ad Channels vs. Frosted Settings Drawer
+| ❌ Before: Stock Home Settings | ✨ After: yourNewTV Home Settings |
+|:---:|:---:|
+| Settings to manage promotional ad channels, video teasers, and audio previews. | Ambient frosted glass drawer for personal profiles, wallpaper backgrounds, and sounds. |
+
+<div align="center">
+  <img src="docs/screenshots/comparison_home_settings.png" width="920" alt="Home Settings Transformation" />
+</div>
+
+---
+
+## 🕹️ Remote Control Buttons
+
+| Remote Button | What it Does |
 |:---|:---|
-| **D-Pad Left / Right** | Glide smoothly across the elevated floating app dock |
-| **D-Pad Up** | Move focus to Top-Right Quick Access Cluster (Settings, Control Center, Sleep) |
-| **D-Pad Down** | Return focus from Top-Right Cluster back to the Dock |
-| **OK / Center** | Launch highlighted application or toggle setting |
-| **MENU** | Open / Close GlassOS Control Center modal |
-| **BACK** | Dismiss Control Center or Settings drawer back to Home Screen |
-| **HOME** | Return instantly to TranscendTV Home Screen |
+| **D-Pad Left / Right** | Glide across the elevated floating app dock |
+| **D-Pad Up** | Move up to the **Top-Right 3 Icons** (Settings, Control Center, Sleep) |
+| **D-Pad Down** | Return from the top-right icons back down to the app dock |
+| **OK / Center** | Launch the focused app or toggle setting |
+| **MENU** | Open / Close the GlassOS Control Center |
+| **BACK** | Close Control Center or Settings drawer back to Home Screen |
+| **HOME** | Go straight to yourNewTV home screen |
 
 ---
 
-## 🚀 Installation & Quick Start
+## 🚀 1-Click Installation
 
 ### Prerequisites
-1. An **Android TV** or **Google TV** device (Xiaomi, Sony, TCL, Philips, Chromecast with Google TV, Onn, Nvidia Shield, etc.).
-2. Computer and TV on the **same Wi-Fi network**.
-3. **Developer Options** enabled on your TV:
-   - Go to **Settings > Device Preferences > About** (or **Settings > System > About**).
-   - Click **Android TV OS Build** 7 times.
-   - Under **Developer Options**, turn **ON** **Network Debugging** (port 5555).
+1. Any **Android TV** or **Google TV** (Xiaomi, Sony, TCL, Philips, Chromecast with Google TV, Onn, Nvidia Shield, Fire TV, etc.).
+2. PC and TV connected to the **same Wi-Fi network**.
+3. Enable **Network Debugging** on TV:
+   - Go to **Settings > About > Android TV OS Build** and click it 7 times until Developer Mode is unlocked.
+   - Go to **Developer Options** and turn **ON** **Network Debugging** (port 5555).
 
 ---
 
-### Option A: Windows 1-Click Installer
+### Windows (1-Click)
 1. Double-click [`scripts/install.bat`](scripts/install.bat).
-2. Enter your TV's Wi-Fi IP address when prompted.
-3. Accept the *"Allow USB debugging?"* prompt on your TV screen.
-4. TranscendTV installs, configures power rules, and launches automatically!
+2. Enter your TV's Wi-Fi IP address when asked.
+3. Click "Always allow" on your TV screen.
+4. Done! yourNewTV installs, configures anti-sleep settings, and launches.
 
 ---
 
-### Option B: macOS / Linux 1-Click Installer
+### macOS / Linux (1-Click)
 ```bash
 chmod +x scripts/install.sh
 ./scripts/install.sh
@@ -126,42 +160,42 @@ chmod +x scripts/install.sh
 
 ---
 
-### Option C: Universal Python Setup Tool
+### Python (Cross-Platform)
 ```bash
 python scripts/setup_tv.py
 ```
 
 ---
 
-### Option D: Manual ADB Commands
+### Manual ADB (If you prefer terminal commands)
 ```bash
-# 1. Connect to TV
+# 1. Connect to TV over Wi-Fi
 adb connect <TV_IP_ADDRESS>:5555
 
-# 2. Install TranscendTV APK
-adb install -r -d apk/TranscendTV-v1.0-release.apk
+# 2. Install yourNewTV release APK
+adb install -r -d apk/yourNewTV-v1.0-release.apk
 
-# 3. Apply anti-sleep and power stability rules
+# 3. Apply anti-sleep stability settings
 adb shell svc power stayon true
 adb shell settings put global stay_on_while_plugged_in 3
 adb shell settings put global sleep_timeout 0
 adb shell settings put system screen_off_timeout 2147483647
 adb shell settings put secure sleep_timeout -1
 
-# 4. Grant TV permissions
+# 4. Grant overlay & usage permissions
 adb shell appops set dev.couchtv.ontv SYSTEM_ALERT_WINDOW allow
 adb shell appops set dev.couchtv.ontv GET_USAGE_STATS allow
 
-# 5. Launch TranscendTV
+# 5. Launch yourNewTV
 adb shell am start -n dev.couchtv.ontv/.HomeAlias
 adb shell input keyevent KEYCODE_HOME
 ```
 
 ---
 
-## 🔄 How to Undo / Restore Factory Home Screen
+## 🔄 How to Undo / Go Back to Stock TV
 
-You can revert to your stock TV launcher at any time with zero risk:
+You can revert to your stock TV launcher anytime:
 
 ```bash
 # Re-enable the factory stock launcher
@@ -171,76 +205,57 @@ adb shell pm enable com.google.android.tvlauncher
 adb shell am start -n com.google.android.tvlauncher/.MainActivity
 ```
 
-To uninstall TranscendTV:
+To completely uninstall yourNewTV:
 ```bash
 adb uninstall dev.couchtv.ontv
 ```
 
 ---
 
-## 🛠️ Building & Customizing From Source
-
-1. **Modify Frontend Assets**:
-   - `src/web/index.html`: DOM structure, Quick Access cluster, Control Center modal.
-   - `src/web/app.css`: Frosted glass styling, dock geometry, spring physics.
-   - `src/web/app.js`: 2D D-pad navigation engine, profile switcher, watchdog timer.
-   - `src/web/clearicon.js`: Icon extraction and SVG rendering dictionary.
-2. **Rebuild, Zipalign & Sign APK**:
-   ```bash
-   python scripts/rebuild_apk.py
-   ```
-   The rebuilt and signed APK will be output to `apk/TranscendTV-v1.0-release.apk`.
-
----
-
-## 📂 Repository Structure
+## 📂 Project Structure
 
 ```
-TranscendTV/
+yourNewTV/
 ├── apk/
-│   └── TranscendTV-v1.0-release.apk    # Pre-built, signed, production-ready APK (35.8 MB)
+│   └── yourNewTV-v1.0-release.apk      # Pre-built, signed, ready-to-flash APK (35.8 MB)
 ├── docs/
-│   ├── ARCHITECTURE.md                 # Deep technical architecture breakdown
-│   ├── TROUBLESHOOTING.md              # Standby, remote key, and ADB diagnostics
+│   ├── ARCHITECTURE.md                 # Technical breakdown (WASM + Chromium GPU)
+│   ├── TROUBLESHOOTING.md              # Standby, remote key, and ADB tips
 │   └── screenshots/
-│       ├── comparison_home.png         # Home Screen Before vs After comparison
-│       ├── comparison_menu.png         # Control Center / Menu Before vs After
-│       ├── comparison_settings.png     # Settings Drawer Before vs After
-│       ├── before_after_comparison.png # Large side-by-side banner
-│       ├── before_stock_android_tv.png # Raw stock Android TV capture
-│       ├── before_stock_menu.png       # Raw stock side menu capture
-│       ├── before_stock_settings.png   # Raw stock settings capture
-│       ├── after_aura_tv_home.png      # TranscendTV ambient home screen
-│       ├── after_aura_tv_control_center.png # Frosted glass Control Center
-│       └── after_aura_tv_settings.png  # Frosted glass Settings drawer
+│       ├── comparison_top_right.png    # Top-right 3 icons Before vs After
+│       ├── comparison_home.png         # Main home screen Before vs After
+│       ├── comparison_quick_actions.png# Control Center Before vs After
+│       ├── comparison_home_settings.png# Home Settings drawer Before vs After
+│       ├── after_aura_tv_home.png      # yourNewTV home screen
+│       ├── after_aura_tv_control_center.png # GlassOS Control Center
+│       └── after_aura_tv_settings.png  # Frosted Settings drawer
 ├── scripts/
-│   ├── install.bat                     # Windows 1-click automated installer
-│   ├── install.sh                      # macOS / Linux 1-click installer
-│   ├── setup_tv.py                     # Cross-platform Python ADB installer
-│   └── rebuild_apk.py                  # Self-contained build, zipalign & signing tool
+│   ├── install.bat                     # Windows 1-click installer
+│   ├── install.sh                      # Mac / Linux 1-click installer
+│   ├── setup_tv.py                     # Universal Python installer
+│   └── rebuild_apk.py                  # Build, zipalign & signing script
 ├── src/
 │   ├── web/                            # Modernized Web UI source files
 │   └── android/                        # Android native wrapper & HomeActivity.kt
 ├── .gitignore
 ├── LICENSE                             # GNU General Public License v3.0
-└── README.md                           # Master project documentation
+└── README.md                           # Master documentation
 ```
 
 ---
 
-## 🙏 Credits & Upstream Attribution
+## 🙏 Credits & Upstream Projects
 
-TranscendTV proudly builds upon the groundbreaking work of the open-source community:
+yourNewTV is built on top of fantastic open-source software:
 
-- **[Couch TV](https://github.com/Seagey/couch-tv)** by **[Seagey](https://github.com/Seagey)**: The incredible local-first on-TV architecture, runtime engine, and wallpaper depth cutouts.
-- **[GlassOS TV](https://github.com/AbhishekKaisar/glassos-tv)** by **[Abhishek Kaisar](https://github.com/AbhishekKaisar)**: The breathtaking frosted glass UI concept, Control Center design, and elevated dock aesthetics.
-- **Android TV Community**: For testing, feedback, and keeping our living rooms free from ad monopolies.
+- **[Couch TV](https://github.com/Seagey/couch-tv)** by **[Seagey](https://github.com/Seagey)**: The lightweight on-TV engine, local-first architecture, and wallpaper depth cutouts.
+- **[GlassOS TV](https://github.com/AbhishekKaisar/glassos-tv)** by **[Abhishek Kaisar](https://github.com/AbhishekKaisar)**: The frosted glass aesthetic, Control Center layout, and elevated dock design.
 
 ---
 
 <div align="center">
 
-**Crafted with ❤️ for clean, ad-free living rooms everywhere.**  
+**Enjoy your new TV!**  
 *Maintained by [@Adilrafiq001](https://github.com/Adilrafiq001).*
 
 </div>
