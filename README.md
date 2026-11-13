@@ -36,33 +36,33 @@ TranscendTV strips away heavy Google Play recommendation daemons, dynamic ad inj
 
 Every screenshot below was captured directly from a physical 4K Android TV over ADB to demonstrate the real, unedited difference.
 
-### 1. Home Screen: Cluttered Billboard vs. Ambient Glass Sanctuary
+### 1. Home Screen: Cluttered Ad Billboard vs. Ambient Glass Sanctuary
 <div align="center">
   <img src="docs/screenshots/comparison_home.png" width="920" alt="Home Screen Before vs After" />
 </div>
 
-- **Before (Stock TV)**: Monopolized by cricket promotions, streaming ads, and clunky rectangular tiles.
-- **After (TranscendTV)**: Floating elevated dock at `4.5rem`, dynamic rotating 4K landscape wallpapers with depth cutouts, and 100% transparent vector app icons.
+- **Before (Stock Android TV)**: Monopolized by sponsored cricket promotions, streaming ads, and clunky rectangular tiles that consume 410+ MB RAM.
+- **After (TranscendTV)**: Floating elevated dock at `4.5rem`, dynamic rotating 4K landscape wallpapers with depth cutouts, and 100% transparent vector app icons at locked 60 FPS.
 
 ---
 
-### 2. Control Center & Menus: Generic Side Strip vs. GlassOS Control Center
+### 2. Quick Action Settings & Control Center: Stock Strip vs. GlassOS Control Center
 <div align="center">
-  <img src="docs/screenshots/comparison_menu.png" width="920" alt="Menu Before vs After" />
+  <img src="docs/screenshots/comparison_quick_actions.png" width="920" alt="Quick Actions Before vs After" />
 </div>
 
-- **Before (Stock TV)**: Clunky, slow, generic side strip menu with limited utility.
-- **After (TranscendTV)**: Instant **GlassOS Control Center** opened via the **`MENU`** key, featuring 8 frosted glass toggles (Sleep, Wi-Fi, Do Not Disturb, Audio, Timer, Controllers, Accessibility, Parental Control) with full 2D D-pad grid navigation.
+- **Before (Stock Android TV)**: Clunky, basic side menu strip with slow remote traversal and limited quick action triggers.
+- **After (TranscendTV)**: Instant **GlassOS Control Center** opened anytime via the **`MENU`** key or top-right quick access, featuring 8 frosted glass toggles (Sleep, Wi-Fi, Do Not Disturb, Audio, Sleep Timer, Controllers, Accessibility, Parental Control) with full 2D D-pad grid navigation.
 
 ---
 
-### 3. Settings: Dreary Android Settings vs. Frosted Glass Drawer
+### 3. Home Screen Settings: Channel & Ad Previews vs. Frosted Glass Drawer
 <div align="center">
-  <img src="docs/screenshots/comparison_settings.png" width="920" alt="Settings Before vs After" />
+  <img src="docs/screenshots/comparison_home_settings.png" width="920" alt="Home Settings Before vs After" />
 </div>
 
-- **Before (Stock TV)**: Plain, clinical Android system settings that obstruct media playback.
-- **After (TranscendTV)**: Ambient frosted glass drawer for profile management, wallpaper switching, and UI personalization without losing your place.
+- **Before (Stock Android TV Home Settings)**: Tedious channel management settings focused on enabling or disabling promotional carousels, video ad previews, and audio teasers.
+- **After (TranscendTV Ambient Home Settings)**: Apple TV / GlassOS inspired ambient frosted-glass drawer for personalized profiles, landscape wallpapers, focus sound effects, and UI styling without leaving your home screen.
 
 ---
 
