@@ -39,113 +39,123 @@ Measured on physical 4K Android TV hardware over ADB against the factory Android
 
 ## Quick Access Cluster (Top-Right Corner)
 
-Stock Android TV clusters search bars, voice prompts, and promotional rows in the header. YourNewTV replaces this with a minimal, three-button Quick Access cluster located in the top-right corner of the display:
+Stock Android TV clusters sponsored carousels, voice queries, and promotional ad feeds in the header. **YourNewTV** replaces this clutter with an instant-access, three-button Quick Access cluster pinned to the top-right corner of the display:
 
 <div align="center">
-  <img src="docs/screenshots/comparison_top_right.png" width="920" alt="Top-Right Corner Comparison" />
+  <img src="docs/screenshots/yournewtv_comparison_top_right.png" width="920" alt="Top-Right Corner Header Comparison" />
 </div>
 
 ---
 
-### 1. Settings Drawer (`q-settings`)
+### 1. Home Settings Drawer (`⚙️` Gear Icon)
 
-Selecting the **Gear** icon opens the non-intrusive frosted-glass Home Settings drawer:
-
-- **Navigation Columns**: Quick lateral switching between Appearance, App Management, Wallpapers, Remote Behavior, Audio Feedback, and User Profiles.
-- **Visual Preferences**: Toggle daylight glass and ambient night modes, or configure 4K rotating landscape scenes with clock depth layering.
-- **Tactile Audio**: Apple TV-calibrated focus audio ticks during remote key navigation.
-- **In-Place Overlay**: Operates as a floating glass sheet without taking you away from ongoing playback or the main screen.
+Selecting the **Gear** icon opens the non-intrusive frosted-glass Home Settings drawer directly on top of the ambient canvas:
 
 <div align="center">
-  <img src="docs/screenshots/menu1_settings_open.png" width="800" alt="Home Settings Drawer Open" />
+  <img src="docs/screenshots/yournewtv_menu1_settings.png" width="880" alt="YourNewTV Home Settings Drawer Open" />
 </div>
+
+- **Dual-Pane Lateral Navigation**: Left navigation column (*Language, Location, Weather, Look and scenes, Apps, People, Quick buttons, About*) with instant sub-options on the right.
+- **Ambient Themes & Scenes**: Switch between dynamic daylight glass and ambient night modes, or configure rotating 4K scenes with clock depth layering.
+- **Haptic Audio Feedback**: Calibrated focus audio ticks for every D-pad remote keystroke.
+- **In-Place Drawer**: Floating glass panel that operates smoothly without unmounting or pausing background media.
 
 ---
 
-### 2. Control Center (`q-control_center` / Remote `MENU` Key)
+### 2. GlassOS Control Center (`🎚️` Sliders Icon / Remote `MENU` Key)
 
-Pressing the **Sliders** icon (or hitting the physical **`MENU`** key on your TV remote) invokes the GlassOS-inspired Control Center overlay:
+Pressing the **Sliders** icon (or pressing the physical **`MENU`** key on your TV remote) opens the floating GlassOS Control Center modal:
 
-- **Active Viewer Header**: Displays current active profile name and live Wi-Fi signal strength.
-- **Eight Instant-Action Toggles** (with 2D D-pad grid navigation):
-  1. **Sleep**: Blank the display panel immediately while keeping network and audio streams intact.
-  2. **Wi-Fi**: Live network status indicator and quick network picker.
-  3. **Do Not Disturb**: Suppress popups, system notifications, and alert sounds.
+<div align="center">
+  <img src="docs/screenshots/yournewtv_menu2_control_center.png" width="880" alt="YourNewTV GlassOS Control Center Open" />
+</div>
+
+- **Active Profile & Network Header**: Live display of current active viewer (*Family / Kids*) and Wi-Fi link status.
+- **Eight Quick Toggles (2D D-Pad Grid Navigation)**:
+  1. **Sleep**: Blanks the display panel immediately while keeping network and audio streams intact.
+  2. **Wi-Fi**: Instant network status and Wi-Fi network picker.
+  3. **Do Not Disturb**: Suppresses system alerts and notification banners.
   4. **Audio Routing**: Fast audio output switching and instant mute.
-  5. **Sleep Timer**: Cycle timer countdown intervals (15m, 30m, 45m, 1h, 2h).
-  6. **Controllers**: Bluetooth gamepad and headphone pairing shortcut.
-  7. **Accessibility**: High-contrast typography and assistive visual toggles.
+  5. **Sleep Timer**: Cycles countdown intervals (15m, 30m, 60m, 90m, Off).
+  6. **Controllers**: Bluetooth game controller and headphone pairing shortcut.
+  7. **Accessibility**: High-contrast typography and assistive visual modes.
   8. **Parental Controls**: One-tap toggle into a restricted, child-safe app profile.
-- **Direct System Links**: Dedicated footer triggers to jump into either Android TV OS System Settings or Launcher Configuration.
-
-<div align="center">
-  <img src="docs/screenshots/menu2_control_center_open.png" width="800" alt="Control Center Open" />
-</div>
+- **Direct System Links**: Dedicated footer buttons for TV System Settings and Glass Launcher Configuration.
 
 ---
 
-### 3. Sleep & Standby Manager (`q-sleep`)
+### 3. Sleep & Standby Manager (`🌙` Moon Icon)
 
-Selecting the **Moon** icon opens the interactive Sleep & Power configuration popup:
-
-- **Countdown Intervals**: Configure automatic shutdown countdowns (15m, 30m, 45m, 1h, 2h) with a single remote press.
-- **Wi-Fi Standby Fix**: Solves the common firmware bug on Xiaomi, Redmi, and generic Android TVs where the OS enters deep standby (S3) after 15 minutes of inactivity and drops the Wi-Fi connection. Dims the display panel to zero wattage while keeping the network card alive.
+Selecting the **Moon** icon opens the interactive Sleep & Standby configuration popup directly underneath the button:
 
 <div align="center">
-  <img src="docs/screenshots/menu3_sleep_menu_open.png" width="800" alt="Sleep Popup Open" />
+  <img src="docs/screenshots/yournewtv_menu3_sleep_timer.png" width="880" alt="YourNewTV Sleep Timer Menu Open" />
 </div>
+
+- **1-Click Countdown Presets**: Quick selection for 15 min, 30 min, 60 min, 90 min, or Off.
+- **Wi-Fi Standby Bug Fix**: Solves the common firmware defect on Xiaomi, Redmi, TCL, and generic Android TVs where the OS enters deep standby (S3) after 15 minutes of inactivity and disconnects Wi-Fi. Dims the display panel to zero wattage while keeping the network card active.
 
 ---
 
 ## Before & After Visual Comparison
 
-All screenshots captured directly from a physical 4K Android TV over ADB without mockups or emulators:
+All captures are 100% authentic 1080p screenshots taken directly from a physical 4K Android TV over ADB without mockups or emulators:
 
-### Main Home Screen
-| Stock Android TV (Factory Default) | YourNewTV Ambient Glass |
-|:---:|:---:|
-| <img src="docs/screenshots/before_stock_android_tv.png" width="450" alt="Stock Android TV Clutter" /> | <img src="docs/screenshots/yournewtv_home.png" width="450" alt="YourNewTV Home Screen" /> |
-| Cluttered with autoplay ads, sponsored rows, and boxy rectangular tiles. | Elevated floating dock at `4.5rem`, rotating landscape wallpapers with clock depth cutouts, and 100% transparent vector icons. |
+### 1. Main Home Screen: Factory Ad Clutter vs. YourNewTV Ambient Glass
 
 <div align="center">
-  <img src="docs/screenshots/comparison_home.png" width="920" alt="Home Screen Comparison Banner" />
+  <img src="docs/screenshots/yournewtv_comparison_home.png" width="960" alt="Main Home Screen Comparison Banner" />
 </div>
+
+| Metric / Feature | Stock Android TV | YourNewTV Ambient Glass |
+|:---|:---|:---|
+| **Advertisements** | Autoplay video banners, sponsored apps, and promotional rows | **0% Ads** — 100% clean ambient canvas |
+| **App Dock** | Cluttered horizontal rails with rectangular cards | Elevated floating dock at `4.5rem` with transparent vector icons |
+| **Clock & Weather** | Small header text | Giant ambient clock with landscape depth layering & live weather |
+| **RAM Footprint** | 410 MB – 560 MB (background ad scrapers) | **48 MB – 62 MB** (Hardware-accelerated GPU raster) |
 
 ---
 
-### Quick Actions vs. Control Center
-| Stock Android TV Quick Menu | YourNewTV Control Center (Active) |
-|:---:|:---:|
-| <img src="docs/screenshots/before_stock_menu.png" width="450" alt="Stock Quick Menu" /> | <img src="docs/screenshots/menu2_control_center_open.png" width="450" alt="Control Center Open" /> |
-| Linear scrolling side menu with slow response and limited options. | Instant 8-toggle frosted glass modal with full 2D D-pad grid navigation. |
+### 2. Quick Actions: Stock Side Strip vs. GlassOS Control Center
 
 <div align="center">
-  <img src="docs/screenshots/comparison_quick_actions.png" width="920" alt="Quick Actions Comparison Banner" />
+  <img src="docs/screenshots/yournewtv_comparison_quick_actions.png" width="960" alt="Quick Actions Comparison Banner" />
 </div>
+
+| Metric / Feature | Stock TV Quick Menu | YourNewTV Control Center |
+|:---|:---|:---|
+| **Navigation Format** | Slow vertical list requiring excessive scrolling | **Instant 2D D-pad grid** with 8 quick toggles |
+| **Activation Key** | Buried in settings | **1-click on top-right sliders or physical `MENU` key** |
+| **Display Panel Standby** | Powers down entire TV (drops network connection) | **Zero-wattage display blanking** (keeps network & audio alive) |
+| **Profile Switching** | Multi-step user account traversal | **Instant Family / Kids toggle** directly from the header |
 
 ---
 
-### Home Settings vs. Settings Drawer
-| Stock Home Settings | YourNewTV Settings Drawer (Active) |
-|:---:|:---:|
-| <img src="docs/screenshots/before_stock_home_settings.png" width="450" alt="Stock Home Settings" /> | <img src="docs/screenshots/menu1_settings_open.png" width="450" alt="Settings Drawer Open" /> |
-| Menu dedicated to managing promotional channels and autoplay ad previews. | Minimalist frosted glass drawer for profile customization, wallpapers, and tactile sounds. |
+### 3. Home Settings: Promotional Feeds vs. Frosted Settings Drawer
 
 <div align="center">
-  <img src="docs/screenshots/comparison_home_settings.png" width="920" alt="Home Settings Comparison Banner" />
+  <img src="docs/screenshots/yournewtv_comparison_home_settings.png" width="960" alt="Home Settings Comparison Banner" />
 </div>
+
+| Metric / Feature | Stock TV Home Settings | YourNewTV Settings Drawer |
+|:---|:---|:---|
+| **Primary Controls** | Toggle sponsored channels, audio teasers, video previews | Language, themes, wallpapers, soundscapes, apps, and remotes |
+| **Layout Design** | Clunky full-screen settings menu | **Dual-pane frosted glass overlay** with instant live preview |
+| **Customization** | Locked down by factory TV firmware | Full control over clock format, weather units, and quick actions |
 
 ---
 
-### Power Management vs. Sleep Timer
-| Stock TV Power Preferences | YourNewTV Sleep Timer (Active) |
-|:---:|:---:|
-| <img src="docs/screenshots/before_stock_settings.png" width="450" alt="Stock Power Preferences" /> | <img src="docs/screenshots/menu3_sleep_menu_open.png" width="450" alt="Sleep Timer Open" /> |
-| Requires traversing multiple submenus inside system settings. | Instant 1-click timer popup directly from the top-right moon icon. |
+### 4. Power & Sleep: Deep Settings Tree vs. 1-Click Sleep Timer
 
 <div align="center">
-  <img src="docs/screenshots/comparison_sleep_menu.png" width="920" alt="Sleep Menu Comparison Banner" />
+  <img src="docs/screenshots/yournewtv_comparison_sleep_timer.png" width="960" alt="Power Management vs Sleep Timer Comparison Banner" />
 </div>
+
+| Metric / Feature | Stock TV Power Settings | YourNewTV Sleep Timer |
+|:---|:---|:---|
+| **Steps to Set Timer** | 6–8 clicks deep (Settings > Preferences > Power > Sleep) | **1 single click** directly from the top-right moon icon |
+| **Presets Available** | Rigid system timeouts | **15m, 30m, 60m, 90m, and instant Off** |
+| **Wi-Fi Connectivity** | Often disconnected by aggressive OS power-saving | **Network connection preserved** for background streaming & downloads |
 
 ---
 
@@ -255,17 +265,18 @@ YourNewTV/
 │   └── logo_horizontal.svg             # Horizontal brand banner with wordmark
 ├── docs/
 │   ├── ARCHITECTURE.md                 # Technical specification (WASM + GPU raster)
+│   ├── MAKE-A-SCENE.md                 # Guide for custom multi-layer 4K scenes
 │   ├── TROUBLESHOOTING.md              # Standby, remote key, and ADB diagnostics
 │   └── screenshots/
-│       ├── comparison_top_right.png    # Top-right cluster before/after
-│       ├── comparison_home.png         # Home screen before/after
-│       ├── comparison_quick_actions.png# Control Center before/after
-│       ├── comparison_home_settings.png# Settings drawer before/after
-│       ├── comparison_sleep_menu.png   # Sleep popup before/after
-│       ├── yournewtv_home.png          # High-res home screen capture
-│       ├── menu1_settings_open.png     # Settings drawer open frame
-│       ├── menu2_control_center_open.png # Control Center open frame
-│       └── menu3_sleep_menu_open.png   # Sleep timer popup open frame
+│       ├── yournewtv_comparison_top_right.png    # Top-right cluster before/after
+│       ├── yournewtv_comparison_home.png         # Home screen before/after
+│       ├── yournewtv_comparison_quick_actions.png# Control Center before/after
+│       ├── yournewtv_comparison_home_settings.png# Settings drawer before/after
+│       ├── yournewtv_comparison_sleep_timer.png  # Sleep timer before/after
+│       ├── yournewtv_home_clean.png              # High-res clean home capture
+│       ├── yournewtv_menu1_settings.png          # Settings drawer open frame
+│       ├── yournewtv_menu2_control_center.png    # Control Center open frame
+│       └── yournewtv_menu3_sleep_timer.png       # Sleep timer popup open frame
 ├── scripts/
 │   ├── install.bat                     # Windows automated installer
 │   ├── install.sh                      # macOS / Linux automated installer
@@ -275,6 +286,7 @@ YourNewTV/
 │   ├── web/                            # Modernized Web UI source files
 │   └── android/                        # Android native wrapper & HomeActivity.kt
 ├── .gitignore
+├── AGENTS.md                           # Authoritative governing contract & protocols
 ├── AUTHORS.md                          # Authors and community acknowledgments
 ├── CODE_OF_CONDUCT.md                  # Contributor Covenant v2.1
 ├── CONTRIBUTING.md                     # Development, testing, and PR guidelines

@@ -1854,9 +1854,9 @@
   }
   function quickAction() {
     var q = quickVisible()[qi];
-    if (q === "settings") openSettings();
-    else if (q === "control_center") openCC();
-    else if (q === "sleep") openMenu();
+    if (q === "settings") { if (ccOpen) closeCC(); openSettings(); }
+    else if (q === "control_center") { if ($("settings").classList.contains("on")) closeSettings(); openCC(); }
+    else if (q === "sleep") { if (ccOpen) closeCC(); if ($("settings").classList.contains("on")) closeSettings(); openMenu(); }
     else if (q === "picture") togglePicture();
     else if (q === "look") toggleLook();
     else if (q === "soundscape") cycleSoundscape();
@@ -2645,7 +2645,7 @@
     ccOpen = false;
     $("cc-overlay").classList.remove("on");
     zone = "quick";
-    qi = 1;
+    qi = Math.min(1, Math.max(0, quickVisible().length - 1));
     paintFocus();
   }
 

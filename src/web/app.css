@@ -1441,6 +1441,7 @@ html.ambient-playing .ambient-vinyl {
   padding: 0.35rem 1rem;
   border-radius: 9999px;
   margin-bottom: 1.25rem;
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
 }
 
@@ -1565,6 +1566,7 @@ html.ambient-playing .ambient-wave span {
   height: 4.25rem;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(15px);
   backdrop-filter: blur(15px);
   cursor: pointer;
   outline: none;
@@ -1923,10 +1925,17 @@ html:not(.kids-on) .kids { display: none; }
    VIBRANT FLOATING APPS & 60FPS HARDWARE-ACCELERATED PERFORMANCE ENGINE
    ========================================================================== */
 
-/* 1. Global Performance Tuning: Disable heavy backdrop-filter blur which crashes Mali-G52 GPU EGL buffers */
-* {
+/* 1. Dock & Scroll Performance Tuning: Disable heavy backdrop-filter blur on scrolling dock elements to preserve locked 60 FPS on Mali/Mali-G52 GPUs */
+.grid, .shelf, .app, .app *, .ambient-title {
   -webkit-backdrop-filter: none !important;
   backdrop-filter: none !important;
+}
+
+/* 2. Re-enable hardware-accelerated frosted glass blur on stationary modal overlays */
+.cc-card, .settings, .sleep-menu, .app-pop, .gear-pop {
+  -webkit-backdrop-filter: blur(24px) !important;
+  backdrop-filter: blur(24px) !important;
+  transform: translateZ(0);
 }
 
 /* 2. Dock Optimization & Hardware Acceleration */
