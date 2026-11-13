@@ -10,9 +10,12 @@
 [![Performance](https://img.shields.io/badge/Framerate-60%20FPS%20GPU%20Raster-black?style=flat-square)](#)
 [![Memory](https://img.shields.io/badge/Memory-48MB%20RAM-black?style=flat-square)](#)
 [![Ads](https://img.shields.io/badge/Ads-0%25-black?style=flat-square)](#)
-[![License](https://img.shields.io/badge/License-GPL%20v3.0-black?style=flat-square)](#)
+[![License](https://img.shields.io/badge/License-MIT-black?style=flat-square)](LICENSE)
 
 A high-performance, local-first ambient launcher designed to replace bloated stock TV home screens. Strips away background ad scrapers, tracking beacons, and sluggish promotional carousels in favor of an optimized, hardware-accelerated interface with an elevated floating dock, dynamic depth wallpapers, and an instant-access control center.
+
+**[Architecture & Design](docs/ARCHITECTURE.md)** • **[Troubleshooting Guide](docs/TROUBLESHOOTING.md)** • **[Upstream Credits](CREDITS.md)** • **[Privacy Policy](PRIVACY.md)** • **[Contributing](CONTRIBUTING.md)** • **[License](LICENSE)**
+
 
 ---
 
@@ -101,7 +104,7 @@ All screenshots captured directly from a physical 4K Android TV over ADB without
 ### Main Home Screen
 | Stock Android TV (Factory Default) | YourNewTV Ambient Glass |
 |:---:|:---:|
-| <img src="docs/screenshots/before_stock_android_tv.png" width="450" alt="Stock Android TV Clutter" /> | <img src="docs/screenshots/after_aura_tv_home.png" width="450" alt="YourNewTV Home Screen" /> |
+| <img src="docs/screenshots/before_stock_android_tv.png" width="450" alt="Stock Android TV Clutter" /> | <img src="docs/screenshots/yournewtv_home.png" width="450" alt="YourNewTV Home Screen" /> |
 | Cluttered with autoplay ads, sponsored rows, and boxy rectangular tiles. | Elevated floating dock at `4.5rem`, rotating landscape wallpapers with clock depth cutouts, and 100% transparent vector icons. |
 
 <div align="center">
@@ -245,6 +248,11 @@ adb uninstall dev.couchtv.ontv
 YourNewTV/
 ├── apk/
 │   └── YourNewTV-v1.0-release.apk      # Pre-built, signed release APK (35.8 MB)
+├── assets/
+│   ├── logo.svg                        # Master vector logo (transparent)
+│   ├── logo.png                        # 1024x1024 high-res transparent raster
+│   ├── logo_3d_glass.png               # 3D frosted glass transparent badge
+│   └── logo_horizontal.svg             # Horizontal brand banner with wordmark
 ├── docs/
 │   ├── ARCHITECTURE.md                 # Technical specification (WASM + GPU raster)
 │   ├── TROUBLESHOOTING.md              # Standby, remote key, and ADB diagnostics
@@ -254,6 +262,7 @@ YourNewTV/
 │       ├── comparison_quick_actions.png# Control Center before/after
 │       ├── comparison_home_settings.png# Settings drawer before/after
 │       ├── comparison_sleep_menu.png   # Sleep popup before/after
+│       ├── yournewtv_home.png          # High-res home screen capture
 │       ├── menu1_settings_open.png     # Settings drawer open frame
 │       ├── menu2_control_center_open.png # Control Center open frame
 │       └── menu3_sleep_menu_open.png   # Sleep timer popup open frame
@@ -266,7 +275,13 @@ YourNewTV/
 │   ├── web/                            # Modernized Web UI source files
 │   └── android/                        # Android native wrapper & HomeActivity.kt
 ├── .gitignore
-├── LICENSE                             # GNU General Public License v3.0
+├── AUTHORS.md                          # Authors and community acknowledgments
+├── CODE_OF_CONDUCT.md                  # Contributor Covenant v2.1
+├── CONTRIBUTING.md                     # Development, testing, and PR guidelines
+├── CREDITS.md                          # Comprehensive third-party license notices
+├── LICENSE                             # MIT Open Source License
+├── PRIVACY.md                          # Zero-telemetry & local-first privacy policy
+├── SECURITY.md                         # Security policy & vulnerability reporting
 └── README.md                           # Master documentation
 ```
 
@@ -274,10 +289,13 @@ YourNewTV/
 
 ## Acknowledgments & Upstream Projects
 
-YourNewTV builds upon the work of the open-source TV community:
+YourNewTV builds upon foundational work from the open-source TV community:
 
 - **[Couch TV](https://github.com/Seagey/couch-tv)** by **[Seagey](https://github.com/Seagey)**: The lightweight on-TV engine, local-first architecture, and wallpaper depth cutouts.
+- **[CleanYourTV](https://github.com/Gathin/cleanyourtv)** by **[Gathin](https://github.com/Gathin)**: Android TV debloat scripts, package inspection utilities, and remote optimizations.
 - **[GlassOS TV](https://github.com/AbhishekKaisar/glassos-tv)** by **[Abhishek Kaisar](https://github.com/AbhishekKaisar)**: The frosted glass aesthetic, Control Center layout, and elevated dock design.
+
+For full license notices, typography licenses, and Creative Commons photographic attributions, please refer to **[CREDITS.md](CREDITS.md)** and **[LICENSE](LICENSE)**.
 
 ---
 

@@ -1,24 +1,115 @@
-GNU GENERAL PUBLIC LICENSE
-Version 3, 29 June 2007
+MIT License
 
-Copyright (C) 2026 AuraTV Contributors
+Copyright (c) 2026 YourNewTV Contributors
 
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-GNU General Public License for more details.
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-You should have received a copy of the GNU General Public License
-along with this program. If not, see <https://www.gnu.org/licenses/>.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
-----------------------------------------------------------------------
-Upstream Credits & Acknowledgments:
-- Couch TV: Copyright (C) 2024-2026 Seagey (https://github.com/Seagey/couch-tv)
-- GlassOS TV: Copyright (C) 2024-2026 Abhishek Kaisar (https://github.com/AbhishekKaisar/glassos-tv)
-All respective trademarks and upstream copyrights belong to their original owners.
+================================================================================
+THIRD-PARTY LICENSES & COPYRIGHT NOTICES
+================================================================================
 
+YourNewTV incorporates, adapts, or builds upon the following open-source
+projects, fonts, and assets in accordance with their respective licenses:
+
+--------------------------------------------------------------------------------
+1. Couch TV (Core Launcher Architecture & WebView Runtime)
+--------------------------------------------------------------------------------
+Copyright (c) 2024-2026 Seagey (https://github.com/Seagey/couch-tv)
+License: MIT License
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+--------------------------------------------------------------------------------
+2. CleanYourTV (Android TV Optimization & Shell Tooling)
+--------------------------------------------------------------------------------
+Copyright (c) 2026 Gathin (https://github.com/Gathin/cleanyourtv)
+License: MIT License
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+--------------------------------------------------------------------------------
+3. GlassOS TV (Control Center Design System & Spatial Glass Concepts)
+--------------------------------------------------------------------------------
+Copyright (c) 2024-2026 Abhishek Kaisar (https://github.com/AbhishekKaisar/glassos-tv)
+License: MIT License
+
+--------------------------------------------------------------------------------
+4. Typefaces (SIL Open Font License, Version 1.1)
+--------------------------------------------------------------------------------
+- Inter: Copyright (c) 2016-2024 The Inter Project Authors
+  (https://github.com/rsms/inter)
+- Antonio: Copyright (c) 2011-2013 Vernon Adams
+  (https://github.com/googlefonts/antonioFont)
+
+SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is copied below, and is also available with a FAQ at:
+https://openfontlicense.org
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of the Font Software, to use, study, copy, merge, embed, modify, redistribute,
+and sell modified and unmodified copies of the Font Software, subject to the
+conditions stated in the SIL Open Font License, Version 1.1.
+
+--------------------------------------------------------------------------------
+5. Photographic Imagery (Wikimedia Commons / Creative Commons)
+--------------------------------------------------------------------------------
+Background photographs are sourced from Wikimedia Commons and used under their
+respective Creative Commons licenses:
+- "Storm cloud at sunset, Albury, NSW" by Thennicke (CC BY-SA 4.0)
+- "Grose Valley, Blue Mountains, NSW" by Diliff (CC BY-SA 3.0)
+- "Tessellated Pavement at sunrise, Tasmania" by JJ Harrison (CC BY-SA 2.5)
+- "Aresquiers beach at sunset, France" by Christian Ferrer (CC BY 4.0)
+- "Sunset over paddy fields, Vang Vieng, Laos" by Basile Morin (CC BY-SA 4.0)
+- "Mirror Lake / Mt. Hood" (CC BY-SA 3.0)
+
+Full attribution, original source links, and license statements are documented in
+CREDITS.md and src/web/backgrounds/CREDITS.md.
