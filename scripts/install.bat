@@ -1,10 +1,10 @@
 @echo off
 setlocal enabledelayedexpansion
-title AuraTV - Windows 1-Click Installer
+title TranscendTV - Windows 1-Click Installer
 color 0B
 
 echo ================================================================
-echo       AuraTV - Ambient Glass Launcher for Android TV
+echo       TranscendTV - Ambient Glass Launcher for Android TV
 echo ================================================================
 echo.
 
@@ -38,8 +38,8 @@ if not "%TV_IP%"=="" (
 )
 
 echo.
-echo [1/4] Installing AuraTV release APK...
-%ADB_CMD% %DEVICE_ARG% install -r -d "%~dp0..\apk\AuraTV-v1.0-release.apk"
+echo [1/4] Installing TranscendTV release APK...
+%ADB_CMD% %DEVICE_ARG% install -r -d "%~dp0..\apk\TranscendTV-v1.0-release.apk"
 
 echo.
 echo [2/4] Applying anti-sleep and power stability optimizations...
@@ -55,15 +55,16 @@ echo [3/4] Granting system alert and usage permissions...
 %ADB_CMD% %DEVICE_ARG% shell appops set dev.couchtv.ontv GET_USAGE_STATS allow
 
 echo.
-echo [4/4] Starting AuraTV Home Screen...
+echo [4/4] Starting TranscendTV Home Screen...
 %ADB_CMD% %DEVICE_ARG% shell am start -n dev.couchtv.ontv/.HomeAlias
 timeout /t 1 /nobreak >nul
 %ADB_CMD% %DEVICE_ARG% shell input keyevent KEYCODE_HOME
 
 echo.
 echo ================================================================
-echo  AuraTV installation complete!
+echo  TranscendTV installation complete!
 echo  Press MENU on your remote to open the GlassOS Control Center.
 echo ================================================================
 echo.
 pause
+

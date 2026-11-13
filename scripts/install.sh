@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
-# AuraTV - macOS / Linux 1-Click Installer
+# TranscendTV - macOS / Linux 1-Click Installer
 set -e
 
 echo "================================================================"
-echo "      AuraTV - Ambient Glass Launcher for Android TV"
+echo "      TranscendTV - Ambient Glass Launcher for Android TV"
 echo "================================================================"
 echo ""
 
@@ -33,10 +33,10 @@ else
 fi
 
 DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-APK_PATH="$DIR/../apk/AuraTV-v1.0-release.apk"
+APK_PATH="$DIR/../apk/TranscendTV-v1.0-release.apk"
 
 echo ""
-echo "[1/4] Installing AuraTV release APK..."
+echo "[1/4] Installing TranscendTV release APK..."
 $ADB_CMD $DEVICE_ARG install -r -d "$APK_PATH"
 
 echo ""
@@ -53,13 +53,14 @@ $ADB_CMD $DEVICE_ARG shell appops set dev.couchtv.ontv SYSTEM_ALERT_WINDOW allow
 $ADB_CMD $DEVICE_ARG shell appops set dev.couchtv.ontv GET_USAGE_STATS allow
 
 echo ""
-echo "[4/4] Starting AuraTV Home Screen..."
+echo "[4/4] Starting TranscendTV Home Screen..."
 $ADB_CMD $DEVICE_ARG shell am start -n dev.couchtv.ontv/.HomeAlias
 sleep 1
 $ADB_CMD $DEVICE_ARG shell input keyevent KEYCODE_HOME
 
 echo ""
 echo "================================================================"
-echo "🎉 AuraTV installation complete!"
+echo "🎉 TranscendTV installation complete!"
 echo "   Press MENU on your remote to open the GlassOS Control Center."
 echo "================================================================"
+

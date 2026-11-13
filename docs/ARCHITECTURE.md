@@ -1,6 +1,6 @@
-# AuraTV Architecture & Design Engineering
+# TranscendTV Architecture & Design Engineering
 
-AuraTV is an ambient, zero-ad, high-performance home launcher designed for Android TV and Google TV devices. It combines the local-first, low-overhead foundation of Couch TV with the aesthetic, frosted-glass design language inspired by GlassOS and Apple TV.
+TranscendTV is an ambient, zero-ad, high-performance home launcher designed for Android TV and Google TV devices. It combines the local-first, low-overhead foundation of Couch TV with the aesthetic, frosted-glass design language inspired by GlassOS and Apple TV.
 
 ---
 
@@ -13,7 +13,7 @@ AuraTV is an ambient, zero-ad, high-performance home launcher designed for Andro
                       +-------------------+-------------------+
                                           |
                       +-------------------v-------------------+
-                      |      AuraTV Android Native Wrapper    |
+                      |      TranscendTV Android Native Wrapper    |
                       |   - dev.couchtv.ontv / HomeActivity   |
                       |   - FLAG_KEEP_SCREEN_ON Window Policy |
                       |   - Hardware Accelerated WebView      |
@@ -76,3 +76,4 @@ Many Android TVs (notably Xiaomi / Redmi / PatchWall) aggressively shut down the
    - `settings put global sleep_timeout 0`: Eliminates system idle timeout.
    - `settings put system screen_off_timeout 2147483647`: Maximizes display standby threshold.
 2. **Watchdog Neutralization**: In `app.js`, `SMART_IDLE` is set to `home_idle_minutes: 0` by default, preventing unexpected autonomous standby triggers.
+
