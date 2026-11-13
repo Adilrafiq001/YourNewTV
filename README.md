@@ -1,6 +1,6 @@
 <div align="center">
 
-# 📺 yourNewTV
+# 📺 YourNewTV
 ### Make your Android TV feel brand new. Zero ads. 60 FPS frosted glass.
 
 [![Platform](https://img.shields.io/badge/Platform-Android%20TV%20%7C%20Google%20TV-3DDC84?style=for-the-badge&logo=android&logoColor=white)](#)
@@ -9,17 +9,17 @@
 [![Ads](https://img.shields.io/badge/Ads-0%25%20Zero%20Commercials-EF4444?style=for-the-badge)](#)
 [![License](https://img.shields.io/badge/License-GPL%20v3.0-blue?style=for-the-badge)](#)
 
-*You don't need to buy an Apple TV to get a fast, clean, ad-free living room experience. **yourNewTV** strips out Google TV's heavy ads, sponsored rows, and lag, replacing it with a lightning-fast frosted glass launcher, floating dock, and Apple-grade control center.*
+*You don't need to buy an Apple TV to get a fast, clean, ad-free living room experience. **YourNewTV** strips out Google TV's heavy ads, sponsored rows, and lag, replacing it with a lightning-fast frosted glass launcher, floating dock, and Apple-grade control center.*
 
 ---
 
 </div>
 
-## ⚡ How Fast Is It? (Stock TV vs yourNewTV)
+## ⚡ How Fast Is It? (Stock TV vs YourNewTV)
 
-We tested **yourNewTV** head-to-head against the factory Android TV launcher (`com.google.android.tvlauncher`) on real 4K hardware over ADB. Here are the numbers:
+We tested **YourNewTV** head-to-head against the factory Android TV launcher (`com.google.android.tvlauncher`) on real 4K hardware over ADB. Here are the numbers:
 
-| Metric | ❌ Old Stock TV (Google TV) | ✨ yourNewTV | 🚀 Difference |
+| Metric | ❌ Old Stock TV (Google TV) | ✨ YourNewTV | 🚀 Difference |
 |:---|:---:|:---:|:---:|
 | **RAM Footprint** | ~410 MB – 560 MB | **~48 MB – 62 MB** | **🟢 88.5% less RAM** |
 | **Startup / Boot Time** | 5.4s – 7.8s (waiting on ads) | **0.42s – 0.58s** | **⚡ 11x faster** |
@@ -33,7 +33,7 @@ We tested **yourNewTV** head-to-head against the factory Android TV launcher (`c
 
 ## 🎯 The Top-Right Corner: 3 Quick Access Icons
 
-On old stock Android TV, the top bar is cluttered with search boxes, recommendation prompts, and autoplay ad banners. In **yourNewTV**, the top-right corner is distilled into **3 clean, frosted-glass quick access icons**:
+On old stock Android TV, the top bar is cluttered with search boxes, recommendation prompts, and autoplay ad banners. In **YourNewTV**, the top-right corner is distilled into **3 clean, frosted-glass quick access icons**:
 
 <div align="center">
   <img src="docs/screenshots/comparison_top_right.png" width="920" alt="Top-Right Corner Before vs After" />
@@ -94,7 +94,7 @@ Clicking the **Moon** icon in the top-right corner opens the **Interactive Sleep
 Every screenshot was taken directly from a real 4K Android TV over ADB:
 
 ### 1. Home Screen: Ad Billboard vs. Clean Ambient Glass
-| ❌ Before: Stock Factory Android TV | ✨ After: yourNewTV |
+| ❌ Before: Stock Factory Android TV | ✨ After: YourNewTV |
 |:---:|:---:|
 | Monopolized by cricket ads, streaming promos, and ugly rectangular tiles. | Floating dock elevated at `4.5rem`, rotating landscape wallpapers with clock depth cutouts, and 100% transparent vector app icons. |
 
@@ -105,7 +105,7 @@ Every screenshot was taken directly from a real 4K Android TV over ADB:
 ---
 
 ### 2. Quick Actions: Stock Side Strip vs. GlassOS Control Center
-| ❌ Before: Stock Quick Actions | ✨ After: yourNewTV Control Center |
+| ❌ Before: Stock Quick Actions | ✨ After: YourNewTV Control Center |
 |:---:|:---:|
 | Basic, slow side strip with linear scrolling and limited options. | Instant 8-toggle frosted glass modal with full 2D D-pad grid navigation. |
 
@@ -116,7 +116,7 @@ Every screenshot was taken directly from a real 4K Android TV over ADB:
 ---
 
 ### 3. Home Settings: Ad Channels vs. Frosted Settings Drawer
-| ❌ Before: Stock Home Settings | ✨ After: yourNewTV Home Settings |
+| ❌ Before: Stock Home Settings | ✨ After: YourNewTV Home Settings |
 |:---:|:---:|
 | Settings to manage promotional ad channels, video teasers, and audio previews. | Ambient frosted glass drawer for personal profiles, wallpaper backgrounds, and sounds. |
 
@@ -127,7 +127,7 @@ Every screenshot was taken directly from a real 4K Android TV over ADB:
 ---
 
 ### 4. Sleep & Power Menu: Deep Submenus vs. 1-Click Popup
-| ❌ Before: Stock Android TV Power Settings | ✨ After: yourNewTV Sleep Timer Popup |
+| ❌ Before: Stock Android TV Power Settings | ✨ After: YourNewTV Sleep Timer Popup |
 |:---:|:---:|
 | Requires digging through 5 nested submenus in system preferences to find sleep timers. | 1-click interactive popup directly from the top-right moon icon with Wi-Fi stay-alive protection. |
 
@@ -147,7 +147,7 @@ Every screenshot was taken directly from a real 4K Android TV over ADB:
 | **OK / Center** | Launch the focused app or toggle setting |
 | **MENU** | Open / Close the GlassOS Control Center |
 | **BACK** | Close Control Center or Settings drawer back to Home Screen |
-| **HOME** | Go straight to yourNewTV home screen |
+| **HOME** | Go straight to YourNewTV home screen |
 
 ---
 
@@ -166,7 +166,7 @@ Every screenshot was taken directly from a real 4K Android TV over ADB:
 1. Double-click [`scripts/install.bat`](scripts/install.bat).
 2. Enter your TV's Wi-Fi IP address when asked.
 3. Click "Always allow" on your TV screen.
-4. Done! yourNewTV installs, configures anti-sleep settings, and launches.
+4. Done! YourNewTV installs, configures anti-sleep settings, and launches.
 
 ---
 
@@ -190,8 +190,8 @@ python scripts/setup_tv.py
 # 1. Connect to TV over Wi-Fi
 adb connect <TV_IP_ADDRESS>:5555
 
-# 2. Install yourNewTV release APK
-adb install -r -d apk/yourNewTV-v1.0-release.apk
+# 2. Install YourNewTV release APK
+adb install -r -d apk/YourNewTV-v1.0-release.apk
 
 # 3. Apply anti-sleep stability settings
 adb shell svc power stayon true
@@ -204,7 +204,7 @@ adb shell settings put secure sleep_timeout -1
 adb shell appops set dev.couchtv.ontv SYSTEM_ALERT_WINDOW allow
 adb shell appops set dev.couchtv.ontv GET_USAGE_STATS allow
 
-# 5. Launch yourNewTV
+# 5. Launch YourNewTV
 adb shell am start -n dev.couchtv.ontv/.HomeAlias
 adb shell input keyevent KEYCODE_HOME
 ```
@@ -223,7 +223,7 @@ adb shell pm enable com.google.android.tvlauncher
 adb shell am start -n com.google.android.tvlauncher/.MainActivity
 ```
 
-To completely uninstall yourNewTV:
+To completely uninstall YourNewTV:
 ```bash
 adb uninstall dev.couchtv.ontv
 ```
@@ -233,9 +233,9 @@ adb uninstall dev.couchtv.ontv
 ## 📂 Project Structure
 
 ```
-yourNewTV/
+YourNewTV/
 ├── apk/
-│   └── yourNewTV-v1.0-release.apk      # Pre-built, signed, ready-to-flash APK (35.8 MB)
+│   └── YourNewTV-v1.0-release.apk      # Pre-built, signed, ready-to-flash APK (35.8 MB)
 ├── docs/
 │   ├── ARCHITECTURE.md                 # Technical breakdown (WASM + Chromium GPU)
 │   ├── TROUBLESHOOTING.md              # Standby, remote key, and ADB tips
@@ -244,7 +244,7 @@ yourNewTV/
 │       ├── comparison_home.png         # Main home screen Before vs After
 │       ├── comparison_quick_actions.png# Control Center Before vs After
 │       ├── comparison_home_settings.png# Home Settings drawer Before vs After
-│       ├── after_aura_tv_home.png      # yourNewTV home screen
+│       ├── after_aura_tv_home.png      # YourNewTV home screen
 │       ├── after_aura_tv_control_center.png # GlassOS Control Center
 │       └── after_aura_tv_settings.png  # Frosted Settings drawer
 ├── scripts/
@@ -264,7 +264,7 @@ yourNewTV/
 
 ## 🙏 Credits & Upstream Projects
 
-yourNewTV is built on top of fantastic open-source software:
+YourNewTV is built on top of fantastic open-source software:
 
 - **[Couch TV](https://github.com/Seagey/couch-tv)** by **[Seagey](https://github.com/Seagey)**: The lightweight on-TV engine, local-first architecture, and wallpaper depth cutouts.
 - **[GlassOS TV](https://github.com/AbhishekKaisar/glassos-tv)** by **[Abhishek Kaisar](https://github.com/AbhishekKaisar)**: The frosted glass aesthetic, Control Center layout, and elevated dock design.

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-yourNewTV - Rebuild & Packaging Tool
-Autonomous script to package web assets into yourNewTV APK, zipalign, and sign.
+YourNewTV - Rebuild & Packaging Tool
+Autonomous script to package web assets into YourNewTV APK, zipalign, and sign.
 """
 
 import base64
@@ -212,7 +212,7 @@ def find_android_tools():
     return zipalign, apksigner
 
 def main():
-    print("[+] yourNewTV - Rebuild & Packaging Engine")
+    print("[+] YourNewTV - Rebuild & Packaging Engine")
     script_dir = os.path.dirname(os.path.abspath(__file__))
     repo_root = os.path.dirname(script_dir)
     web_dir = os.path.join(repo_root, "src", "web")
@@ -223,8 +223,8 @@ def main():
     clearicon_js_path = os.path.join(web_dir, "clearicon.js")
     index_html_path = os.path.join(web_dir, "index.html")
 
-    target_apk = os.path.join(apk_dir, "yourNewTV-v1.0-release.apk")
-    temp_apk = os.path.join(apk_dir, "yourNewTV-temp.apk")
+    target_apk = os.path.join(apk_dir, "YourNewTV-v1.0-release.apk")
+    temp_apk = os.path.join(apk_dir, "YourNewTV-temp.apk")
 
     if not os.path.exists(target_apk):
         print(f"[-] Base APK not found at {target_apk}")
@@ -254,7 +254,7 @@ def main():
         return
 
     print("[+] Zipaligning APK...")
-    aligned_apk = os.path.join(apk_dir, "yourNewTV-aligned.apk")
+    aligned_apk = os.path.join(apk_dir, "YourNewTV-aligned.apk")
     if os.path.exists(aligned_apk):
         os.remove(aligned_apk)
     subprocess.run([zipalign, "-p", "-f", "4", temp_apk, aligned_apk], check=True)
@@ -291,7 +291,7 @@ def main():
     if os.path.exists(target_apk):
         os.remove(target_apk)
     shutil.move(aligned_apk, target_apk)
-    print(f"[✓] yourNewTV release APK rebuilt successfully: {target_apk}")
+    print(f"[✓] YourNewTV release APK rebuilt successfully: {target_apk}")
 
 if __name__ == "__main__":
     main()

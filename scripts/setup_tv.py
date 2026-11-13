@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-yourNewTV - Setup & Installation Tool
+YourNewTV - Setup & Installation Tool
 Automated 1-Click Installer for Android TV & Google TV.
-Configures yourNewTV, prevents Wi-Fi standby deep sleep, and sets up 60fps ambient UI.
+Configures YourNewTV, prevents Wi-Fi standby deep sleep, and sets up 60fps ambient UI.
 """
 
 import os
@@ -92,16 +92,16 @@ def main():
     # Determine APK path
     script_dir = os.path.dirname(os.path.abspath(__file__))
     repo_root = os.path.dirname(script_dir)
-    apk_path = os.path.join(repo_root, "apk", "yourNewTV-v1.0-release.apk")
+    apk_path = os.path.join(repo_root, "apk", "YourNewTV-v1.0-release.apk")
     
     if not os.path.exists(apk_path):
         print(f"[-] Error: APK not found at {apk_path}")
         sys.exit(1)
 
-    print(f"\n[+] Step 1: Installing yourNewTV ({os.path.getsize(apk_path) // (1024*1024)} MB)...")
+    print(f"\n[+] Step 1: Installing YourNewTV ({os.path.getsize(apk_path) // (1024*1024)} MB)...")
     res = subprocess.run(adb_base + ["install", "-r", "-d", apk_path], stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
     if "Success" in res.stdout or "Success" in res.stderr:
-        print("    [✓] yourNewTV installed successfully.")
+        print("    [✓] YourNewTV installed successfully.")
     else:
         print(f"    [-] Install warning: {res.stdout.strip()} {res.stderr.strip()}")
 
@@ -126,16 +126,16 @@ def main():
         subprocess.run(adb_base + pcmd, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     print("    [✓] Overlay and usage permissions granted.")
 
-    print("\n[+] Step 4: Launching yourNewTV Home Screen...")
+    print("\n[+] Step 4: Launching YourNewTV Home Screen...")
     subprocess.run(adb_base + ["shell", "am", "start", "-n", "dev.couchtv.ontv/.HomeAlias"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     time.sleep(1)
     subprocess.run(adb_base + ["shell", "input", "keyevent", "KEYCODE_HOME"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-    print("    [✓] yourNewTV is now running on your screen.")
+    print("    [✓] YourNewTV is now running on your screen.")
 
     # Optional: Disable stock Google TV launcher
     print("\n" + "="*60)
     print("OPTIONAL: Disable Stock Google TV / Android TV Ad Launcher")
-    print("This makes yourNewTV the exclusive default launcher on your Home button.")
+    print("This makes YourNewTV the exclusive default launcher on your Home button.")
     print("="*60)
     choice = input("[?] Disable stock launcher (com.google.android.tvlauncher)? (y/N): ").strip().lower()
     if choice == "y":
@@ -144,10 +144,10 @@ def main():
         print("    [✓] Stock ad launcher disabled.")
         print("    [i] To restore it anytime, run: adb shell pm enable com.google.android.tvlauncher")
     else:
-        print("    [-] Stock launcher untouched. You can select yourNewTV using the Home key prompt.")
+        print("    [-] Stock launcher untouched. You can select YourNewTV using the Home key prompt.")
 
     print("\n" + "="*60)
-    print("🎉 yourNewTV Installation & Tuning Complete!")
+    print("🎉 YourNewTV Installation & Tuning Complete!")
     print("Enjoy a clean, fast, ad-free ambient living room experience.")
     print("="*60)
 
