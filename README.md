@@ -1,176 +1,183 @@
 <div align="center">
 
-# 📺 YourNewTV
-### Make your Android TV feel brand new. Zero ads. 60 FPS frosted glass.
+# YourNewTV
 
-[![Platform](https://img.shields.io/badge/Platform-Android%20TV%20%7C%20Google%20TV-3DDC84?style=for-the-badge&logo=android&logoColor=white)](#)
-[![Performance](https://img.shields.io/badge/Speed-Locked%2060%20FPS-6366F1?style=for-the-badge&logo=fastapi&logoColor=white)](#)
-[![RAM](https://img.shields.io/badge/RAM-88%25%20Less%20Memory-10B981?style=for-the-badge)](#)
-[![Ads](https://img.shields.io/badge/Ads-0%25%20Zero%20Commercials-EF4444?style=for-the-badge)](#)
-[![License](https://img.shields.io/badge/License-GPL%20v3.0-blue?style=for-the-badge)](#)
+### Ad-free, 60 FPS frosted-glass ambient launcher for Android TV and Google TV.
 
-*You don't need to buy an Apple TV to get a fast, clean, ad-free living room experience. **YourNewTV** strips out Google TV's heavy ads, sponsored rows, and lag, replacing it with a lightning-fast frosted glass launcher, floating dock, and Apple-grade control center.*
+[![Platform](https://img.shields.io/badge/Platform-Android%20TV%20%7C%20Google%20TV-black?style=flat-square)](#)
+[![Performance](https://img.shields.io/badge/Framerate-60%20FPS%20GPU%20Raster-black?style=flat-square)](#)
+[![Memory](https://img.shields.io/badge/Memory-48MB%20RAM-black?style=flat-square)](#)
+[![Ads](https://img.shields.io/badge/Ads-0%25-black?style=flat-square)](#)
+[![License](https://img.shields.io/badge/License-GPL%20v3.0-black?style=flat-square)](#)
+
+A high-performance, local-first ambient launcher designed to replace bloated stock TV home screens. Strips away background ad scrapers, tracking beacons, and sluggish promotional carousels in favor of an optimized, hardware-accelerated interface with an elevated floating dock, dynamic depth wallpapers, and an instant-access control center.
 
 ---
 
 </div>
 
-## ⚡ How Fast Is It? (Stock TV vs YourNewTV)
+## Performance Benchmarks
 
-We tested **YourNewTV** head-to-head against the factory Android TV launcher (`com.google.android.tvlauncher`) on real 4K hardware over ADB. Here are the numbers:
+Measured on physical 4K Android TV hardware over ADB against the factory Android TV launcher (`com.google.android.tvlauncher`):
 
-| Metric | ❌ Old Stock TV (Google TV) | ✨ YourNewTV | 🚀 Difference |
-|:---|:---:|:---:|:---:|
-| **RAM Footprint** | ~410 MB – 560 MB | **~48 MB – 62 MB** | **🟢 88.5% less RAM** |
-| **Startup / Boot Time** | 5.4s – 7.8s (waiting on ads) | **0.42s – 0.58s** | **⚡ 11x faster** |
-| **Remote D-Pad Lag** | 140ms – 230ms (stuttery) | **16.6ms (Locked 60 FPS)** | **🏎️ Instant response** |
-| **Frame Render Time** | 24ms – 38ms (dropped frames) | **~3.2ms (GPU accelerated)** | **💎 Silky smooth** |
-| **Background Data / Tracking** | 18 – 35 MB / hr (ad beacons) | **0 KB / hr (Zero tracking)** | **🔒 100% private** |
-| **Sponsored Ads & Popups** | 12+ rows of commercials | **0 (Zero ads anywhere)** | **✨ Peaceful screen** |
-| **App Install Size** | 180+ MB system bloat | **35.8 MB standalone APK** | **📦 80% lighter** |
+| Metric | Stock Android TV | YourNewTV | Delta |
+|:---|:---|:---|:---|
+| **Active Memory (RAM)** | 410 MB – 560 MB | **48 MB – 62 MB** | **-88.5% memory footprint** |
+| **Cold Start Latency** | 5.4s – 7.8s (ad network wait) | **0.42s – 0.58s** | **11x faster boot** |
+| **D-Pad Input Latency** | 140ms – 230ms (jank/dropped frames) | **16.6ms (Locked 60 FPS)** | **Zero input latency** |
+| **Frame Composition Time** | 24ms – 38ms | **~3.2ms (GPU layer raster)** | **Locked 60 FPS** |
+| **Background Network Telemetry** | 18 – 35 MB / hr (ad beacons) | **0 KB / hr (Zero telemetry)** | **100% local-first** |
+| **Sponsored Content Rows** | 12+ rows / video carousels | **0 (Zero advertisements)** | **Clean UI** |
+| **Package Size** | 180+ MB (system bundle overhead) | **35.8 MB (Standalone APK)** | **-80% disk space** |
 
 ---
 
-## 🎯 The Top-Right Corner: 3 Quick Access Icons
+## Quick Access Cluster (Top-Right Corner)
 
-On old stock Android TV, the top bar is cluttered with search boxes, recommendation prompts, and autoplay ad banners. In **YourNewTV**, the top-right corner is distilled into **3 clean, frosted-glass quick access icons**:
+Stock Android TV clusters search bars, voice prompts, and promotional rows in the header. YourNewTV replaces this with a minimal, three-button Quick Access cluster located in the top-right corner of the display:
 
 <div align="center">
-  <img src="docs/screenshots/comparison_top_right.png" width="920" alt="Top-Right Corner Before vs After" />
+  <img src="docs/screenshots/comparison_top_right.png" width="920" alt="Top-Right Corner Comparison" />
 </div>
-
-Here is exactly what is inside each of the 3 top-right icons:
 
 ---
 
-### 1. ⚙️ Settings Icon (`q-settings`)
-Clicking the **Gear** icon in the top-right corner opens the **Frosted Glass Home Settings Drawer**:
-- **Sidebar Categories**: Instant navigation across Look & Themes, App Drawer, Wallpapers, Remote Control, Sound, and Profiles.
-- **Theme & Appearance**: Switch between clean daylight glass and dark ambient night looks.
-- **Focus Sounds**: Apple TV-style subtle tactile audio ticks when navigating with the remote.
-- **Rotating Landscape Wallpapers**: Select 4K dynamic landscapes with clock depth layers.
-- **Zero Disruption**: Opens as a smooth frosted overlay directly over your screen without dumping you into slow Android system menus.
+### 1. Settings Drawer (`q-settings`)
+
+Selecting the **Gear** icon opens the non-intrusive frosted-glass Home Settings drawer:
+
+- **Navigation Columns**: Quick lateral switching between Appearance, App Management, Wallpapers, Remote Behavior, Audio Feedback, and User Profiles.
+- **Visual Preferences**: Toggle daylight glass and ambient night modes, or configure 4K rotating landscape scenes with clock depth layering.
+- **Tactile Audio**: Apple TV-calibrated focus audio ticks during remote key navigation.
+- **In-Place Overlay**: Operates as a floating glass sheet without taking you away from ongoing playback or the main screen.
 
 <div align="center">
-  <img src="docs/screenshots/menu1_settings_open.png" width="800" alt="Settings Drawer Open" />
+  <img src="docs/screenshots/menu1_settings_open.png" width="800" alt="Home Settings Drawer Open" />
 </div>
 
 ---
 
-### 2. 🎛️ Control Center Icon (`q-control_center` or remote `MENU` key)
-Clicking the **Sliders** icon (or pressing **`MENU`** on your remote) brings up the full **GlassOS Control Center**:
-- **Active Profile Badge**: Shows current viewer profile ("Family") and active Wi-Fi status.
-- **8 Frosted Quick Toggles** with 2D D-pad grid navigation:
-  - **Sleep**: Blank the TV display immediately without disconnecting Wi-Fi.
-  - **Wi-Fi**: Real-time signal strength indicator and quick network picker.
-  - **Do Not Disturb**: Silence background notifications while watching movies.
-  - **Audio Output**: Fast audio routing and instant mute.
-  - **Sleep Timer**: Cycle timer countdown (15 min, 30 min, 45 min, 1 hr, 2 hr).
-  - **Controllers**: 1-click Bluetooth pairing for remotes and gamepads.
-  - **Accessibility**: High-contrast text and visual aids.
-  - **Parental Controls**: One-tap toggle into kid-safe mode.
-- **Dedicated Footers**: Jump directly to TV System Settings or Glass Settings.
+### 2. Control Center (`q-control_center` / Remote `MENU` Key)
+
+Pressing the **Sliders** icon (or hitting the physical **`MENU`** key on your TV remote) invokes the GlassOS-inspired Control Center overlay:
+
+- **Active Viewer Header**: Displays current active profile name and live Wi-Fi signal strength.
+- **Eight Instant-Action Toggles** (with 2D D-pad grid navigation):
+  1. **Sleep**: Blank the display panel immediately while keeping network and audio streams intact.
+  2. **Wi-Fi**: Live network status indicator and quick network picker.
+  3. **Do Not Disturb**: Suppress popups, system notifications, and alert sounds.
+  4. **Audio Routing**: Fast audio output switching and instant mute.
+  5. **Sleep Timer**: Cycle timer countdown intervals (15m, 30m, 45m, 1h, 2h).
+  6. **Controllers**: Bluetooth gamepad and headphone pairing shortcut.
+  7. **Accessibility**: High-contrast typography and assistive visual toggles.
+  8. **Parental Controls**: One-tap toggle into a restricted, child-safe app profile.
+- **Direct System Links**: Dedicated footer triggers to jump into either Android TV OS System Settings or Launcher Configuration.
 
 <div align="center">
-  <img src="docs/screenshots/menu2_control_center_open.png" width="800" alt="Control Center Modal Open" />
+  <img src="docs/screenshots/menu2_control_center_open.png" width="800" alt="Control Center Open" />
 </div>
 
 ---
 
-### 3. 🌙 Sleep Timer Icon (`q-sleep`)
-Clicking the **Moon** icon in the top-right corner opens the **Interactive Sleep Timer Popup**:
-- **Quick-Cycle Timers**: Choose 15m, 30m, 45m, 1 hour, or 2 hours with a single D-pad click.
-- **Anti-Standby Fix**: Powers down the display panel while keeping the internal Wi-Fi chip awake, permanently fixing the Xiaomi / Android TV deep sleep Wi-Fi bug.
-- **Instant Display Off**: Dim screen to zero wattage without cutting streaming audio or downloads.
+### 3. Sleep & Standby Manager (`q-sleep`)
+
+Selecting the **Moon** icon opens the interactive Sleep & Power configuration popup:
+
+- **Countdown Intervals**: Configure automatic shutdown countdowns (15m, 30m, 45m, 1h, 2h) with a single remote press.
+- **Wi-Fi Standby Fix**: Solves the common firmware bug on Xiaomi, Redmi, and generic Android TVs where the OS enters deep standby (S3) after 15 minutes of inactivity and drops the Wi-Fi connection. Dims the display panel to zero wattage while keeping the network card alive.
 
 <div align="center">
-  <img src="docs/screenshots/menu3_sleep_menu_open.png" width="800" alt="Sleep Timer Popup Open" />
+  <img src="docs/screenshots/menu3_sleep_menu_open.png" width="800" alt="Sleep Popup Open" />
 </div>
 
 ---
 
-## 📸 Complete Before vs. After Gallery
+## Before & After Visual Comparison
 
-Every screenshot was taken directly from a real 4K Android TV over ADB:
+All screenshots captured directly from a physical 4K Android TV over ADB without mockups or emulators:
 
-### 1. Home Screen: Ad Billboard vs. Clean Ambient Glass
-| ❌ Before: Stock Factory Android TV | ✨ After: YourNewTV |
+### Main Home Screen
+| Stock Android TV (Factory Default) | YourNewTV Ambient Glass |
 |:---:|:---:|
-| Monopolized by cricket ads, streaming promos, and ugly rectangular tiles. | Floating dock elevated at `4.5rem`, rotating landscape wallpapers with clock depth cutouts, and 100% transparent vector app icons. |
+| <img src="docs/screenshots/before_stock_android_tv.png" width="450" alt="Stock Android TV Clutter" /> | <img src="docs/screenshots/after_aura_tv_home.png" width="450" alt="YourNewTV Home Screen" /> |
+| Cluttered with autoplay ads, sponsored rows, and boxy rectangular tiles. | Elevated floating dock at `4.5rem`, rotating landscape wallpapers with clock depth cutouts, and 100% transparent vector icons. |
 
 <div align="center">
-  <img src="docs/screenshots/comparison_home.png" width="920" alt="Home Screen Transformation" />
+  <img src="docs/screenshots/comparison_home.png" width="920" alt="Home Screen Comparison Banner" />
 </div>
 
 ---
 
-### 2. Quick Actions: Stock Side Strip vs. GlassOS Control Center
-| ❌ Before: Stock Quick Actions | ✨ After: YourNewTV Control Center |
+### Quick Actions vs. Control Center
+| Stock Android TV Quick Menu | YourNewTV Control Center (Active) |
 |:---:|:---:|
-| Basic, slow side strip with linear scrolling and limited options. | Instant 8-toggle frosted glass modal with full 2D D-pad grid navigation. |
+| <img src="docs/screenshots/before_stock_menu.png" width="450" alt="Stock Quick Menu" /> | <img src="docs/screenshots/menu2_control_center_open.png" width="450" alt="Control Center Open" /> |
+| Linear scrolling side menu with slow response and limited options. | Instant 8-toggle frosted glass modal with full 2D D-pad grid navigation. |
 
 <div align="center">
-  <img src="docs/screenshots/comparison_quick_actions.png" width="920" alt="Quick Actions Transformation" />
+  <img src="docs/screenshots/comparison_quick_actions.png" width="920" alt="Quick Actions Comparison Banner" />
 </div>
 
 ---
 
-### 3. Home Settings: Ad Channels vs. Frosted Settings Drawer
-| ❌ Before: Stock Home Settings | ✨ After: YourNewTV Home Settings |
+### Home Settings vs. Settings Drawer
+| Stock Home Settings | YourNewTV Settings Drawer (Active) |
 |:---:|:---:|
-| Settings to manage promotional ad channels, video teasers, and audio previews. | Ambient frosted glass drawer for personal profiles, wallpaper backgrounds, and sounds. |
+| <img src="docs/screenshots/before_stock_home_settings.png" width="450" alt="Stock Home Settings" /> | <img src="docs/screenshots/menu1_settings_open.png" width="450" alt="Settings Drawer Open" /> |
+| Menu dedicated to managing promotional channels and autoplay ad previews. | Minimalist frosted glass drawer for profile customization, wallpapers, and tactile sounds. |
 
 <div align="center">
-  <img src="docs/screenshots/comparison_home_settings.png" width="920" alt="Home Settings Transformation" />
+  <img src="docs/screenshots/comparison_home_settings.png" width="920" alt="Home Settings Comparison Banner" />
 </div>
 
 ---
 
-### 4. Sleep & Power Menu: Deep Submenus vs. 1-Click Popup
-| ❌ Before: Stock Android TV Power Settings | ✨ After: YourNewTV Sleep Timer Popup |
+### Power Management vs. Sleep Timer
+| Stock TV Power Preferences | YourNewTV Sleep Timer (Active) |
 |:---:|:---:|
-| Requires digging through 5 nested submenus in system preferences to find sleep timers. | 1-click interactive popup directly from the top-right moon icon with Wi-Fi stay-alive protection. |
+| <img src="docs/screenshots/before_stock_settings.png" width="450" alt="Stock Power Preferences" /> | <img src="docs/screenshots/menu3_sleep_menu_open.png" width="450" alt="Sleep Timer Open" /> |
+| Requires traversing multiple submenus inside system settings. | Instant 1-click timer popup directly from the top-right moon icon. |
 
 <div align="center">
-  <img src="docs/screenshots/comparison_sleep_menu.png" width="920" alt="Sleep Menu Transformation" />
+  <img src="docs/screenshots/comparison_sleep_menu.png" width="920" alt="Sleep Menu Comparison Banner" />
 </div>
 
 ---
 
-## 🕹️ Remote Control Buttons
+## Remote Control Navigation
 
-| Remote Button | What it Does |
+| Remote Button | Function |
 |:---|:---|
-| **D-Pad Left / Right** | Glide across the elevated floating app dock |
-| **D-Pad Up** | Move up to the **Top-Right 3 Icons** (Settings, Control Center, Sleep) |
-| **D-Pad Down** | Return from the top-right icons back down to the app dock |
-| **OK / Center** | Launch the focused app or toggle setting |
-| **MENU** | Open / Close the GlassOS Control Center |
-| **BACK** | Close Control Center or Settings drawer back to Home Screen |
-| **HOME** | Go straight to YourNewTV home screen |
+| **D-Pad Left / Right** | Navigate across the elevated floating app dock |
+| **D-Pad Up** | Move focus to the **Top-Right Quick Access Cluster** (Settings, Control Center, Sleep) |
+| **D-Pad Down** | Return focus from the top-right cluster back down to the app dock |
+| **OK / Center** | Launch the focused application or activate setting |
+| **MENU** | Toggle the GlassOS Control Center modal |
+| **BACK** | Dismiss active drawer, Control Center, or popup back to Home Screen |
+| **HOME** | Instant return to the YourNewTV home screen |
 
 ---
 
-## 🚀 1-Click Installation
+## Installation
 
 ### Prerequisites
-1. Any **Android TV** or **Google TV** (Xiaomi, Sony, TCL, Philips, Chromecast with Google TV, Onn, Nvidia Shield, Fire TV, etc.).
-2. PC and TV connected to the **same Wi-Fi network**.
+1. Any **Android TV** or **Google TV** device (Xiaomi, Sony, TCL, Philips, Chromecast with Google TV, Onn, Nvidia Shield, Fire TV, etc.).
+2. PC and TV connected to the **same local Wi-Fi network**.
 3. Enable **Network Debugging** on TV:
-   - Go to **Settings > About > Android TV OS Build** and click it 7 times until Developer Mode is unlocked.
-   - Go to **Developer Options** and turn **ON** **Network Debugging** (port 5555).
+   - Navigate to **Settings > About > Android TV OS Build** and click it 7 times until Developer Mode is unlocked.
+   - Open **Developer Options** and enable **Network Debugging** (port 5555).
 
 ---
 
-### Windows (1-Click)
+### Windows (Automated)
 1. Double-click [`scripts/install.bat`](scripts/install.bat).
-2. Enter your TV's Wi-Fi IP address when asked.
-3. Click "Always allow" on your TV screen.
-4. Done! YourNewTV installs, configures anti-sleep settings, and launches.
+2. Enter your TV's local IP address when prompted.
+3. Accept the *"Always allow from this computer"* dialog on your TV.
+4. The installer configures power rules, installs the APK, and sets YourNewTV as the active launcher.
 
 ---
 
-### macOS / Linux (1-Click)
+### macOS / Linux (Automated)
 ```bash
 chmod +x scripts/install.sh
 ./scripts/install.sh
@@ -185,22 +192,22 @@ python scripts/setup_tv.py
 
 ---
 
-### Manual ADB (If you prefer terminal commands)
+### Manual Installation (ADB CLI)
 ```bash
 # 1. Connect to TV over Wi-Fi
 adb connect <TV_IP_ADDRESS>:5555
 
-# 2. Install YourNewTV release APK
+# 2. Install pre-built YourNewTV release APK
 adb install -r -d apk/YourNewTV-v1.0-release.apk
 
-# 3. Apply anti-sleep stability settings
+# 3. Apply power and sleep stability flags
 adb shell svc power stayon true
 adb shell settings put global stay_on_while_plugged_in 3
 adb shell settings put global sleep_timeout 0
 adb shell settings put system screen_off_timeout 2147483647
 adb shell settings put secure sleep_timeout -1
 
-# 4. Grant overlay & usage permissions
+# 4. Grant required system permissions
 adb shell appops set dev.couchtv.ontv SYSTEM_ALERT_WINDOW allow
 adb shell appops set dev.couchtv.ontv GET_USAGE_STATS allow
 
@@ -211,47 +218,48 @@ adb shell input keyevent KEYCODE_HOME
 
 ---
 
-## 🔄 How to Undo / Go Back to Stock TV
+## Uninstallation & Factory Restore
 
-You can revert to your stock TV launcher anytime:
+To restore the factory default Google TV or Android TV launcher:
 
 ```bash
-# Re-enable the factory stock launcher
+# Re-enable the stock launcher
 adb shell pm enable com.google.android.tvlauncher
 
-# Switch back to stock launcher
+# Start stock home activity
 adb shell am start -n com.google.android.tvlauncher/.MainActivity
 ```
 
-To completely uninstall YourNewTV:
+To remove YourNewTV completely:
 ```bash
 adb uninstall dev.couchtv.ontv
 ```
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 YourNewTV/
 ├── apk/
-│   └── YourNewTV-v1.0-release.apk      # Pre-built, signed, ready-to-flash APK (35.8 MB)
+│   └── YourNewTV-v1.0-release.apk      # Pre-built, signed release APK (35.8 MB)
 ├── docs/
-│   ├── ARCHITECTURE.md                 # Technical breakdown (WASM + Chromium GPU)
-│   ├── TROUBLESHOOTING.md              # Standby, remote key, and ADB tips
+│   ├── ARCHITECTURE.md                 # Technical specification (WASM + GPU raster)
+│   ├── TROUBLESHOOTING.md              # Standby, remote key, and ADB diagnostics
 │   └── screenshots/
-│       ├── comparison_top_right.png    # Top-right 3 icons Before vs After
-│       ├── comparison_home.png         # Main home screen Before vs After
-│       ├── comparison_quick_actions.png# Control Center Before vs After
-│       ├── comparison_home_settings.png# Home Settings drawer Before vs After
-│       ├── after_aura_tv_home.png      # YourNewTV home screen
-│       ├── after_aura_tv_control_center.png # GlassOS Control Center
-│       └── after_aura_tv_settings.png  # Frosted Settings drawer
+│       ├── comparison_top_right.png    # Top-right cluster before/after
+│       ├── comparison_home.png         # Home screen before/after
+│       ├── comparison_quick_actions.png# Control Center before/after
+│       ├── comparison_home_settings.png# Settings drawer before/after
+│       ├── comparison_sleep_menu.png   # Sleep popup before/after
+│       ├── menu1_settings_open.png     # Settings drawer open frame
+│       ├── menu2_control_center_open.png # Control Center open frame
+│       └── menu3_sleep_menu_open.png   # Sleep timer popup open frame
 ├── scripts/
-│   ├── install.bat                     # Windows 1-click installer
-│   ├── install.sh                      # Mac / Linux 1-click installer
+│   ├── install.bat                     # Windows automated installer
+│   ├── install.sh                      # macOS / Linux automated installer
 │   ├── setup_tv.py                     # Universal Python installer
-│   └── rebuild_apk.py                  # Build, zipalign & signing script
+│   └── rebuild_apk.py                  # Self-contained build, zipalign & signing tool
 ├── src/
 │   ├── web/                            # Modernized Web UI source files
 │   └── android/                        # Android native wrapper & HomeActivity.kt
@@ -262,9 +270,9 @@ YourNewTV/
 
 ---
 
-## 🙏 Credits & Upstream Projects
+## Acknowledgments & Upstream Projects
 
-YourNewTV is built on top of fantastic open-source software:
+YourNewTV builds upon the work of the open-source TV community:
 
 - **[Couch TV](https://github.com/Seagey/couch-tv)** by **[Seagey](https://github.com/Seagey)**: The lightweight on-TV engine, local-first architecture, and wallpaper depth cutouts.
 - **[GlassOS TV](https://github.com/AbhishekKaisar/glassos-tv)** by **[Abhishek Kaisar](https://github.com/AbhishekKaisar)**: The frosted glass aesthetic, Control Center layout, and elevated dock design.
@@ -273,7 +281,6 @@ YourNewTV is built on top of fantastic open-source software:
 
 <div align="center">
 
-**Enjoy your new TV!**  
-*Maintained by [@Adilrafiq001](https://github.com/Adilrafiq001).*
+**Maintained by [@Adilrafiq001](https://github.com/Adilrafiq001).**
 
 </div>
